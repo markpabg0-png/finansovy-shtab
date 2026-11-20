@@ -43,12 +43,14 @@ label{font-size:13px;color:#bdc9d9}
 <div class="stats">
 <div class="stat"><small>Доход сегодня</small><b id="today">0 ₽</b></div>
 <div class="stat"><small>У тёти</small><b id="aunt">0 ₽</b></div>
+<div class="stat"><small>Баланс по записям</small><b id="cashBalance">0 ₽</b></div>
 </div>
 
 <nav>
 <button onclick="show('home')">Главная</button>
 <button onclick="show('debts')">Долги</button>
 <button onclick="show('income')">Доходы</button>
+<button onclick="show('expenses')">Расходы</button>
 <button onclick="show('savings')">Накопления</button>
 </nav>
 
@@ -56,7 +58,7 @@ label{font-size:13px;color:#bdc9d9}
 <h3>Быстрые действия</h3>
 <div class="actions">
 <button onclick="show('income')">＋ Доход</button>
-<button onclick="show('debts')">＋ Долг</button>
+<button onclick="show('expenses')">− Расход</button>
 </div>
 <div class="section">
 <b>Последние операции</b>
@@ -97,6 +99,20 @@ label{font-size:13px;color:#bdc9d9}
 </div>
 </section>
 
+<section id="expenses" class="hidden">
+<h3>Мои расходы</h3>
+<div class="section">
+<label>Категория</label>
+<select id="expenseCategory"><option>Еда</option><option>Транспорт</option><option>Жильё</option><option>Связь</option><option>Здоровье</option><option>Другое</option></select>
+<label>Сумма, ₽</label>
+<input id="expenseAmount" type="number" min="0.01" step="0.01" placeholder="500">
+<label>Комментарий (необязательно)</label>
+<input id="expenseNote" placeholder="Например, продукты">
+<button onclick="addExpense()">Записать расход</button>
+</div>
+<div class="section"><b>Всего расходов</b><div class="total" id="expensesTotal">0 ₽</div></div>
+</section>
+
 <section id="savings" class="hidden">
 <h3>Деньги у тёти</h3>
 <div class="section">
@@ -134,6 +150,14 @@ function addIncome(){
  data.entries.push({type:'income',amount,note:document.getElementById('incomeNote').value.trim(),date:new Date().toISOString().slice(0,10)});
  document.getElementById('incomeAmount').value='';document.getElementById('incomeNote').value='';save();
 }
+function addExpense(){
+ const amount=Number(document.getElementById('expenseAmount').value);
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму расхода');
+ const category=document.getElementById('expenseCategory').value;
+ const note=document.getElementById('expenseNote').value.trim();
+ data.entries.push({type:'expense',category,amount,note:note||category,date:new Date().toISOString().slice(0,10)});
+ document.getElementById('expenseAmount').value='';document.getElementById('expenseNote').value='';save();
+}
 function addPayment(){
  const id=document.getElementById('paymentCreditor').value,creditor=data.debts.find(d=>d.id===id);
  const amount=Number(document.getElementById('paymentAmount').value),note=document.getElementById('paymentNote').value.trim();
@@ -157,6 +181,12 @@ function render(){
  document.getElementById('total').textContent=money(data.debts.length?debt:1500000);
  document.getElementById('aunt').textContent=money(data.aunt);
  document.getElementById('auntBig').textContent=money(data.aunt);
+ const totalIncome=data.entries.filter(e=>e.type==='income').reduce((s,e)=>s+Number(e.amount||0),0);
+ const totalExpenses=data.entries.filter(e=>e.type==='expense').reduce((s,e)=>s+Number(e.amount||0),0);
+ const totalPayments=data.entries.filter(e=>e.type==='payment').reduce((s,e)=>s+Number(e.amount||0),0);
+ const cashBalance=totalIncome-totalExpenses-totalPayments-Number(data.aunt||0);
+ document.getElementById('cashBalance').textContent=money(cashBalance);
+ document.getElementById('expensesTotal').textContent=money(totalExpenses);
  const today=new Date().toISOString().slice(0,10);
  const income=data.entries.filter(e=>e.type==='income'&&e.date===today).reduce((s,e)=>s+Number(e.amount||0),0);
  document.getElementById('today').textContent=money(income);
@@ -167,7 +197,7 @@ function render(){
  else if(data.debts.some(d=>d.id===previous&&Number(d.amount)>0))sel.value=previous;
  const recent=data.entries.slice(-8).reverse();
  document.getElementById('recent').innerHTML=recent.map(e=>{
-  const label=e.type==='income'?'Доход':e.type==='payment'?'Выплата':e.type==='aunt'?'Перевод тёте':'Операция';
+  const label=e.type==='income'?'Доход':e.type==='expense'?'Расход · '+esc(e.category||'Другое'):e.type==='payment'?'Выплата':e.type==='aunt'?'Перевод тёте':'Операция';
   const who=e.type==='payment'&&e.creditorName?' · '+esc(e.creditorName):'';
   return '<div class="item">'+label+who+' · '+money(e.amount)+'<br><small>'+esc(e.date||'')+(e.note?' · '+esc(e.note):'')+'</small></div>';
  }).join('')||'Пока записей нет';
