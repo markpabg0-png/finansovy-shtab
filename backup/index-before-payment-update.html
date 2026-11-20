@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Финансовый штаб</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101827;color:#f4f6fb;font-family:Arial,sans-serif;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:24px}
+.card{background:#203b61;padding:22px;border-radius:18px;margin:18px 0}
+.card small,.muted{color:#b9c9df}
+.total{font-size:32px;font-weight:bold;margin:12px 0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:#1b293d;padding:16px;border-radius:14px}
+.stat small{color:#aab9cc}
+.stat b{display:block;font-size:19px;margin-top:8px}
+nav{display:flex;gap:6px;margin:20px 0}
+nav button{flex:1;padding:11px 4px;font-size:12px}
+button{border:0;border-radius:11px;background:#31547e;color:white;padding:13px;font-weight:bold}
+input,select{width:100%;padding:13px;border:1px solid #40516a;border-radius:10px;background:#172438;color:white;margin:7px 0 13px;font-size:16px}
+.section{background:#1b293d;border-radius:14px;padding:15px;margin:10px 0}
+.hidden{display:none}
+.item{padding:13px 0;border-bottom:1px solid #34445b}
+.item:last-child{border:0}
+.actions{display:flex;gap:8px}
+.actions button{flex:1}
+label{font-size:13px;color:#bdc9d9}
+</style>
+</head>
+<body>
+<header><h1>Мой финансовый штаб</h1><b>₽</b></header>
+
+<div class="card">
+<small>ОСТАТОК ДОЛГА</small>
+<div class="total" id="total">1 500 000 ₽</div>
+<small>Твой путь к финансовой свободе</small>
+</div>
+
+<div class="stats">
+<div class="stat"><small>Доход сегодня</small><b id="today">0 ₽</b></div>
+<div class="stat"><small>У тёти</small><b id="aunt">0 ₽</b></div>
+</div>
+
+<nav>
+<button onclick="show('home')">Главная</button>
+<button onclick="show('debts')">Долги</button>
+<button onclick="show('income')">Доходы</button>
+<button onclick="show('savings')">Накопления</button>
+</nav>
+
+<section id="home">
+<h3>Быстрые действия</h3>
+<div class="actions">
+<button onclick="show('income')">＋ Доход</button>
+<button onclick="show('debts')">＋ Долг</button>
+</div>
+<div class="section">
+<b>Последние операции</b>
+<div id="recent" class="muted">Пока записей нет</div>
+</div>
+</section>
+
+<section id="debts" class="hidden">
+<h3>Мои кредиторы</h3>
+<div class="section">
+<label>Имя или псевдоним</label>
+<input id="person" placeholder="Например, Кредитор 1">
+<label>Сумма долга, ₽</label>
+<input id="debtAmount" type="number" placeholder="250000">
+<button onclick="addDebt()">Добавить кредитора</button>
+</div>
+<div id="debtList"></div>
+</section>
+
+<section id="income" class="hidden">
+<h3>Доходы и выплаты</h3>
+<div class="section">
+<label>Сумма, ₽</label>
+<input id="incomeAmount" type="number" placeholder="3000">
+<label>Комментарий</label>
+<input id="incomeNote" placeholder="Работа курьером">
+<button onclick="addIncome()">Записать доход</button>
+</div>
+<div class="section">
+<label>Кому выплачиваешь</label>
+<select id="paymentCreditor"><option value="">Нет непогашенных долгов</option></select>
+<label>Сумма выплаты, ₽</label>
+<input id="paymentAmount" type="number" min="1" step="0.01" placeholder="2000">
+<label>Комментарий (необязательно)</label>
+<input id="paymentNote" placeholder="Перевод кредитору">
+<button onclick="addPayment()">Записать выплату и уменьшить долг</button>
+<p class="muted">Выплата уменьшит долг выбранного кредитора. Нельзя списать больше его остатка.</p>
+</div>
+</section>
+
+<section id="savings" class="hidden">
+<h3>Деньги у тёти</h3>
+<div class="section">
+<p>Фактически переданные деньги: <b id="auntBig">0 ₽</b></p>
+<label>Сумма нового перевода, ₽</label>
+<input id="auntAmount" type="number" placeholder="2000">
+<button onclick="addAunt()">Записать перевод</button>
+</div>
+</section>
+
+<script>
+const STORAGE_KEY='financeData';
+let data;
+try { data=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{"debts":[],"entries":[],"aunt":0}'); }
+catch(e){ data={debts:[],entries:[],aunt:0}; }
+if(!data||typeof data!=='object') data={debts:[],entries:[],aunt:0};
+if(!Array.isArray(data.debts)) data.debts=[];
+if(!Array.isArray(data.entries)) data.entries=[];
+if(!Number.isFinite(Number(data.aunt))) data.aunt=0;
+function makeId(){return 'd-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);}
+data.debts.forEach(d=>{if(!d.id)d.id=makeId();d.amount=Math.max(0,Number(d.amount)||0);});
+function money(n){return Number(n||0).toLocaleString('ru-RU',{maximumFractionDigits:2})+' ₽';}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data));render();}
+function show(id){document.querySelectorAll('body > section').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');}
+function addDebt(){
+ const name=document.getElementById('person').value.trim(),amount=Number(document.getElementById('debtAmount').value);
+ if(!name||!Number.isFinite(amount)||amount<=0)return alert('Заполни имя и положительную сумму долга');
+ data.debts.push({id:makeId(),name,amount});
+ document.getElementById('person').value='';document.getElementById('debtAmount').value='';save();
+}
+function addIncome(){
+ const amount=Number(document.getElementById('incomeAmount').value);
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму');
+ data.entries.push({type:'income',amount,note:document.getElementById('incomeNote').value.trim(),date:new Date().toISOString().slice(0,10)});
+ document.getElementById('incomeAmount').value='';document.getElementById('incomeNote').value='';save();
+}
+function addPayment(){
+ const id=document.getElementById('paymentCreditor').value,creditor=data.debts.find(d=>d.id===id);
+ const amount=Number(document.getElementById('paymentAmount').value),note=document.getElementById('paymentNote').value.trim();
+ if(!creditor)return alert('Выбери кредитора');
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму выплаты');
+ if(amount>creditor.amount)return alert('Нельзя выплатить больше остатка долга: '+money(creditor.amount));
+ creditor.amount=Math.max(0,Math.round((creditor.amount-amount)*100)/100);
+ data.entries.push({type:'payment',creditorId:creditor.id,creditorName:creditor.name,amount,note:note||'Выплата кредитору: '+creditor.name,date:new Date().toISOString().slice(0,10)});
+ document.getElementById('paymentAmount').value='';document.getElementById('paymentNote').value='';
+ save();alert('Выплата записана. Остаток долга: '+money(creditor.amount));
+}
+function addAunt(){
+ const amount=Number(document.getElementById('auntAmount').value);
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму');
+ data.aunt=Number(data.aunt)+amount;
+ data.entries.push({type:'aunt',amount,note:'Перевод тёте',date:new Date().toISOString().slice(0,10)});
+ document.getElementById('auntAmount').value='';save();
+}
+function render(){
+ const debt=data.debts.reduce((s,d)=>s+(Number(d.amount)||0),0);
+ document.getElementById('total').textContent=money(data.debts.length?debt:1500000);
+ document.getElementById('aunt').textContent=money(data.aunt);
+ document.getElementById('auntBig').textContent=money(data.aunt);
+ const today=new Date().toISOString().slice(0,10);
+ const income=data.entries.filter(e=>e.type==='income'&&e.date===today).reduce((s,e)=>s+Number(e.amount||0),0);
+ document.getElementById('today').textContent=money(income);
+ document.getElementById('debtList').innerHTML=data.debts.map(d=>'<div class="section"><b>'+esc(d.name)+'</b><br><span>'+money(d.amount)+'</span>'+(Number(d.amount)===0?'<div class="muted">Долг погашен</div>':'')+'</div>').join('')||'<div class="section muted">Пока кредиторов нет</div>';
+ const sel=document.getElementById('paymentCreditor'),previous=sel.value;
+ sel.innerHTML=data.debts.filter(d=>Number(d.amount)>0).map(d=>'<option value="'+esc(d.id)+'">'+esc(d.name)+' — '+money(d.amount)+'</option>').join('');
+ if(!sel.options.length)sel.innerHTML='<option value="">Нет непогашенных долгов</option>';
+ else if(data.debts.some(d=>d.id===previous&&Number(d.amount)>0))sel.value=previous;
+ const recent=data.entries.slice(-8).reverse();
+ document.getElementById('recent').innerHTML=recent.map(e=>{
+  const label=e.type==='income'?'Доход':e.type==='payment'?'Выплата':e.type==='aunt'?'Перевод тёте':'Операция';
+  const who=e.type==='payment'&&e.creditorName?' · '+esc(e.creditorName):'';
+  return '<div class="item">'+label+who+' · '+money(e.amount)+'<br><small>'+esc(e.date||'')+(e.note?' · '+esc(e.note):'')+'</small></div>';
+ }).join('')||'Пока записей нет';
+}
+localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+render();
+if(window.Telegram?.WebApp){Telegram.WebApp.ready();Telegram.WebApp.expand();}
+</script>
+</body>
+</html>
