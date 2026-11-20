@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Финансовый штаб</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101827;color:#f4f6fb;font-family:Arial,sans-serif;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:24px}
+.card{background:#203b61;padding:22px;border-radius:18px;margin:18px 0}
+.card small,.muted{color:#b9c9df}
+.total{font-size:32px;font-weight:bold;margin:12px 0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:#1b293d;padding:16px;border-radius:14px}
+.stat small{color:#aab9cc}
+.stat b{display:block;font-size:19px;margin-top:8px}
+nav{display:flex;gap:6px;margin:20px 0}
+nav button{flex:1;padding:11px 4px;font-size:12px}
+button{border:0;border-radius:11px;background:#31547e;color:white;padding:13px;font-weight:bold}
+input{width:100%;padding:13px;border:1px solid #40516a;border-radius:10px;background:#172438;color:white;margin:7px 0 13px;font-size:16px}
+.section{background:#1b293d;border-radius:14px;padding:15px;margin:10px 0}
+.hidden{display:none}
+.item{padding:13px 0;border-bottom:1px solid #34445b}
+.item:last-child{border:0}
+.actions{display:flex;gap:8px}
+.actions button{flex:1}
+label{font-size:13px;color:#bdc9d9}
+</style>
+</head>
+<body>
+<header><h1>Мой финансовый штаб</h1><b>₽</b></header>
+
+<div class="card">
+<small>ОСТАТОК ДОЛГА</small>
+<div class="total" id="total">1 500 000 ₽</div>
+<small>Твой путь к финансовой свободе</small>
+</div>
+
+<div class="stats">
+<div class="stat"><small>Доход сегодня</small><b id="today">0 ₽</b></div>
+<div class="stat"><small>У тёти</small><b id="aunt">0 ₽</b></div>
+</div>
+
+<nav>
+<button onclick="show('home')">Главная</button>
+<button onclick="show('debts')">Долги</button>
+<button onclick="show('income')">Доходы</button>
+<button onclick="show('savings')">Накопления</button>
+</nav>
+
+<section id="home">
+<h3>Быстрые действия</h3>
+<div class="actions">
+<button onclick="show('income')">＋ Доход</button>
+<button onclick="show('debts')">＋ Долг</button>
+</div>
+<div class="section">
+<b>Последние операции</b>
+<div id="recent" class="muted">Пока записей нет</div>
+</div>
+</section>
+
+<section id="debts" class="hidden">
+<h3>Мои кредиторы</h3>
+<div class="section">
+<label>Имя или псевдоним</label>
+<input id="person" placeholder="Например, Кредитор 1">
+<label>Сумма долга, ₽</label>
+<input id="debtAmount" type="number" placeholder="250000">
+<button onclick="addDebt()">Добавить кредитора</button>
+</div>
+<div id="debtList"></div>
+</section>
+
+<section id="income" class="hidden">
+<h3>Доходы и выплаты</h3>
+<div class="section">
+<label>Сумма, ₽</label>
+<input id="incomeAmount" type="number" placeholder="3000">
+<label>Комментарий</label>
+<input id="incomeNote" placeholder="Работа курьером">
+<button onclick="addIncome()">Записать доход</button>
+</div>
+<div class="section">
+<label>Выплата по долгу, ₽</label>
+<input id="paymentAmount" type="number" placeholder="2000">
+<button onclick="addPayment()">Записать выплату</button>
+</div>
+</section>
+
+<section id="savings" class="hidden">
+<h3>Деньги у тёти</h3>
+<div class="section">
+<p>Фактически переданные деньги: <b id="auntBig">0 ₽</b></p>
+<label>Сумма нового перевода, ₽</label>
+<input id="auntAmount" type="number" placeholder="2000">
+<button onclick="addAunt()">Записать перевод</button>
+</div>
+</section>
+
+<script>
+const data=JSON.parse(localStorage.getItem('financeData')||'{"debts":[],"entries":[],"aunt":0}');
+const money=n=>Number(n||0).toLocaleString('ru-RU')+' ₽';
+function save(){localStorage.setItem('financeData',JSON.stringify(data));render()}
+function show(id){
+document.querySelectorAll('body > section').forEach(x=>x.classList.add('hidden'));
+document.getElementById(id).classList.remove('hidden');
+}
+function addDebt(){
+let name=document.getElementById('person').value.trim();
+let amount=Number(document.getElementById('debtAmount').value);
+if(!name||amount<=0)return alert('Заполни имя и сумму');
+data.debts.push({name,amount});
+document.getElementById('person').value='';
+document.getElementById('debtAmount').value='';
+save();
+}
+function addIncome(){
+let amount=Number(document.getElementById('incomeAmount').value);
+if(amount<=0)return alert('Введи сумму');
+data.entries.push({type:'income',amount,note:document.getElementById('incomeNote').value,date:new Date().toISOString().slice(0,10)});
+save();
+}
+function addPayment(){
+let amount=Number(document.getElementById('paymentAmount').value);
+if(amount<=0)return alert('Введи сумму');
+data.entries.push({type:'payment',amount,note:'Выплата по долгу',date:new Date().toISOString().slice(0,10)});
+save();
+}
+function addAunt(){
+let amount=Number(document.getElementById('auntAmount').value);
+if(amount<=0)return alert('Введи сумму');
+data.aunt+=amount;
+data.entries.push({type:'aunt',amount,note:'Перевод тёте',date:new Date().toISOString().slice(0,10)});
+save();
+}
+function render(){
+let debt=data.debts.reduce((s,d)=>s+d.amount,0);
+document.getElementById('total').textContent=money(debt||1500000);
+document.getElementById('aunt').textContent=money(data.aunt);
+document.getElementById('auntBig').textContent=money(data.aunt);
+let today=new Date().toISOString().slice(0,10);
+let income=data.entries.filter(e=>e.type==='income'&&e.date===today).reduce((s,e)=>s+e.amount,0);
+document.getElementById('today').textContent=money(income);
+document.getElementById('debtList').innerHTML=data.debts.map(d=>`<div class="section">${d.name}<br><b>${money(d.amount)}</b></div>`).join('');
+let recent=data.entries.slice(-8).reverse();
+document.getElementById('recent').innerHTML=recent.map(e=>`<div class="item">${e.note||e.type} · ${money(e.amount)}</div>`).join('')||'Пока записей нет';
+}
+render();
+if(window.Telegram?.WebApp){Telegram.WebApp.ready();Telegram.WebApp.expand()}
+</script>
+</body>
+</html>
