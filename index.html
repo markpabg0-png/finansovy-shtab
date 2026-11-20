@@ -32,6 +32,42 @@ input,select{width:100%;padding:13px;border:1px solid #40516a;border-radius:10px
 .small-actions button{flex:1;padding:9px;font-size:12px}
 button.danger{background:#713d4a}
 label{font-size:13px;color:#bdc9d9}
+
+/* NEON CYBER THEME */
+:root{color-scheme:dark;--bg:#080b16;--panel:#11182b;--panel2:#151f38;--line:#293858;--cyan:#35e7ff;--violet:#a66bff;--pink:#ff4fd8;--muted:#98a8c8}
+body{background:radial-gradient(ellipse at 15% 0%,#19204b 0%,transparent 42%),radial-gradient(ellipse at 95% 22%,#25123e 0%,transparent 36%),#080b16;color:#f4f6ff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:18px;max-width:760px;margin:0 auto}
+header{padding:8px 2px 18px;border-bottom:1px solid #26314e}
+h1{font-size:22px;letter-spacing:.3px;margin:8px 0}
+header b{color:var(--cyan);font-size:25px;text-shadow:0 0 16px #35e7ff88}
+h3{font-size:19px;letter-spacing:.2px;margin:22px 2px 13px}
+.card{position:relative;overflow:hidden;background:linear-gradient(135deg,#172344,#241641 75%,#142b45);border:1px solid #5862a5;border-radius:22px;padding:23px;margin:20px 0;box-shadow:0 12px 35px #0008,inset 0 1px #ffffff12}
+.card:after{content:"";position:absolute;width:170px;height:170px;border:1px solid #35e7ff55;border-radius:50%;right:-65px;top:-70px;box-shadow:0 0 0 18px #35e7ff0b,0 0 0 38px #a66bff0a}
+.card small,.muted{color:#aebcda}
+.total{font-size:clamp(27px,7vw,36px);font-weight:800;letter-spacing:-.8px;margin:13px 0;color:#fff;text-shadow:0 0 18px #a66bff66}
+.stats{gap:11px}
+.stat,.section{background:linear-gradient(145deg,#151f36,#101729);border:1px solid #293858;border-radius:17px;box-shadow:0 7px 20px #0004}
+.stat{padding:16px;min-width:0}
+.stat small{color:#aab9d7;font-size:12px}
+.stat b{font-size:clamp(16px,4vw,20px);color:var(--cyan);overflow-wrap:anywhere}
+nav{gap:8px;margin:20px 0}
+button{background:linear-gradient(120deg,#5544a8,#286b9b);border:1px solid #7182d4;color:#fff;border-radius:12px;padding:13px 14px;font-weight:700;box-shadow:0 4px 14px #17113e88;transition:filter .15s,transform .15s}
+button:active{transform:scale(.98);filter:brightness(1.2)}
+nav button{background:#141d33;border:1px solid #34466d;color:#c9d6f2;min-height:42px}
+nav button:focus,nav button:hover{background:linear-gradient(110deg,#563c99,#155d77);border-color:var(--cyan);color:white}
+input,select{background:#0c1324;border:1px solid #354667;color:#f4f6ff;border-radius:12px;padding:14px;font-size:16px;outline:none}
+input:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #35e7ff1c}
+label{color:#b9c8e6;font-weight:600}
+.section{padding:16px;margin:11px 0}
+.actions{gap:10px}
+.actions button:first-child{background:linear-gradient(120deg,#087f91,#1d9d9a);border-color:#44e6dc}
+.actions button:nth-child(2){background:linear-gradient(120deg,#8b347d,#bd456b);border-color:#f17bc4}
+.small-actions button{padding:10px;font-size:12px}
+button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#bd6687}
+.item{border-bottom:1px solid #293858;line-height:1.55}
+.item small{color:#91a2c5}
+.hidden{display:none}
+@media(max-width:420px){body{padding:13px}.card{padding:19px}.stat{padding:13px}nav button{flex:1 1 29%;font-size:12px}.actions button{padding:12px 8px}}
+
 </style>
 </head>
 <body>
