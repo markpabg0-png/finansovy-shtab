@@ -103,6 +103,15 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 .debt-progress-figures small{font-size:11px;color:#aebcda}
 .debt-progress-figures b{font-size:14px;color:#f4f6ff}
 
+/* PAYMENT SCHEDULE */
+.plan-card{border-color:#34466d}
+.plan-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.plan-head span{font-size:12px;font-weight:700;color:var(--cyan)}
+.plan-card .total{font-size:25px;margin:9px 0}
+.plan-late{border-color:#a94d69}
+.plan-late .plan-head span{color:#ff86aa}
+.plan-done{opacity:.72}
+.plan-done .plan-head span{color:#72e6b1}
 </style>
 </head>
 <body>
@@ -126,6 +135,7 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 <button onclick="show('income')">Доходы</button>
 <button onclick="show('expenses')">Расходы</button>
 <button onclick="show('savings')">Накопления</button>
+<button onclick="show('schedule')">Платежи</button>
 </nav>
 
 <section id="home">
@@ -188,6 +198,18 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 <div class="section"><b>Всего расходов</b><div class="total" id="expensesTotal">0 ₽</div></div>
 </section>
 
+<section id="schedule" class="hidden">
+<h3>Календарь платежей</h3>
+<div class="section">
+<label>Кому платёж</label><select id="planCreditor"></select>
+<label>Сумма, ₽</label><input id="planAmount" type="number" min="0.01" step="0.01" placeholder="5000">
+<label>Дата платежа</label><input id="planDate" type="date">
+<label>Комментарий (необязательно)</label><input id="planNote" placeholder="Например, очередной платёж">
+<button onclick="addPlan()">＋ Запланировать платёж</button>
+<p class="muted">Здесь будут предстоящие платежи и просроченные планы.</p>
+</div><div id="planList"></div>
+</section>
+
 <section id="savings" class="hidden">
 <h3>Деньги у тёти</h3>
 <div class="section">
@@ -206,6 +228,7 @@ catch(e){ data={debts:[],entries:[],aunt:0}; }
 if(!data||typeof data!=='object') data={debts:[],entries:[],aunt:0};
 if(!Array.isArray(data.debts)) data.debts=[];
 if(!Array.isArray(data.entries)) data.entries=[];
+if(!Array.isArray(data.plans)) data.plans=[];
 if(!Number.isFinite(Number(data.aunt))) data.aunt=0;
 function makeId(){return 'd-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);}
 data.debts.forEach(d=>{if(!d.id)d.id=makeId();d.amount=Math.max(0,Number(d.amount)||0);});
@@ -290,6 +313,33 @@ function addPayment(){
  document.getElementById('paymentAmount').value='';document.getElementById('paymentNote').value='';
  save();alert('Выплата записана. Остаток долга: '+money(creditor.amount));
 }
+function addPlan(){
+ const creditorId=document.getElementById('planCreditor').value;
+ const creditor=data.debts.find(d=>d.id===creditorId);
+ const amount=Number(document.getElementById('planAmount').value);
+ const date=document.getElementById('planDate').value;
+ const note=document.getElementById('planNote').value.trim();
+ if(!creditor)return alert('Сначала добавь кредитора с непогашенным долгом');
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму');
+ if(amount>creditor.amount)return alert('Плановый платёж больше остатка долга: '+money(creditor.amount));
+ if(!date)return alert('Выбери дату платежа');
+ data.plans.push({id:makeId(),creditorId,creditorName:creditor.name,amount,date,note,done:false});
+ document.getElementById('planAmount').value='';document.getElementById('planNote').value='';save();
+}
+function completePlan(id){
+ const plan=data.plans.find(p=>p.id===id);if(!plan||plan.done)return;
+ const creditor=data.debts.find(d=>d.id===plan.creditorId);
+ if(!creditor)return alert('Кредитор не найден. План нельзя отметить оплаченным.');
+ if(Number(plan.amount)>Number(creditor.amount))return alert('Остаток долга меньше суммы плана. Измени план или остаток долга.');
+ if(!confirm('Записать выплату '+money(plan.amount)+' кредитору «'+creditor.name+'»?'))return;
+ creditor.amount=Math.max(0,Math.round((Number(creditor.amount)-Number(plan.amount))*100)/100);
+ data.entries.push({id:makeId(),type:'payment',creditorId:creditor.id,creditorName:creditor.name,amount:Number(plan.amount),note:plan.note||'Плановый платёж',date:new Date().toISOString().slice(0,10)});
+ plan.done=true;plan.paidDate=new Date().toISOString().slice(0,10);save();
+}
+function deletePlan(id){
+ if(!confirm('Удалить этот плановый платёж?'))return;
+ data.plans=data.plans.filter(p=>p.id!==id);save();
+}
 function addAunt(){
  const amount=Number(document.getElementById('auntAmount').value);
  if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму');
@@ -321,6 +371,17 @@ function render(){
  sel.innerHTML=data.debts.filter(d=>Number(d.amount)>0).map(d=>'<option value="'+esc(d.id)+'">'+esc(d.name)+' — '+money(d.amount)+'</option>').join('');
  if(!sel.options.length)sel.innerHTML='<option value="">Нет непогашенных долгов</option>';
  else if(data.debts.some(d=>d.id===previous&&Number(d.amount)>0))sel.value=previous;
+ const planSel=document.getElementById('planCreditor'),oldPlanSel=planSel.value;
+ planSel.innerHTML=data.debts.filter(d=>Number(d.amount)>0).map(d=>'<option value="'+esc(d.id)+'">'+esc(d.name)+' — остаток '+money(d.amount)+'</option>').join('');
+ if(!planSel.options.length)planSel.innerHTML='<option value="">Нет непогашенных долгов</option>';
+ else if(data.debts.some(d=>d.id===oldPlanSel&&Number(d.amount)>0))planSel.value=oldPlanSel;
+ const todayPlan=new Date().toISOString().slice(0,10);
+ const plans=[...data.plans].sort((a,b)=>(a.done?1:0)-(b.done?1:0)||String(a.date).localeCompare(String(b.date)));
+ document.getElementById('planList').innerHTML=plans.map(p=>{
+  const status=p.done?'Оплачено':p.date<todayPlan?'Просрочен':p.date===todayPlan?'Сегодня':'Предстоит';
+  const cls=p.done?'plan-done':p.date<todayPlan?'plan-late':'';
+  return '<div class="section plan-card '+cls+'"><div class="plan-head"><b>'+esc(p.creditorName||'Кредитор')+'</b><span>'+status+'</span></div><div class="total">'+money(p.amount)+'</div><div class="muted">Дата: '+esc(p.date)+(p.note?' · '+esc(p.note):'')+'</div>'+(p.done?'<div class="muted">Оплачено: '+esc(p.paidDate||'')+'</div>':'<div class="small-actions"><button onclick="completePlan(\''+esc(p.id)+'\')">Отметить оплаченным</button><button class="danger" onclick="deletePlan(\''+esc(p.id)+'\')">Удалить</button></div>')+'</div>';
+ }).join('')||'<div class="section muted">Пока платежей нет. Добавь первый план выше.</div>';
  const recent=data.entries.slice(-8).reverse();
  document.getElementById('recent').innerHTML=recent.map(e=>{
   const label=e.type==='income'?'Доход':e.type==='expense'?'Расход · '+esc(e.category||'Другое'):e.type==='payment'?'Выплата':e.type==='aunt'?'Перевод тёте':'Операция';
