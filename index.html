@@ -77,6 +77,18 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 .hidden{display:none}
 @media(max-width:420px){body{padding:13px}.card{padding:19px}.stat{padding:13px}nav button{flex:1 1 29%;font-size:12px}.actions button{padding:12px 8px}}
 
+
+/* DEBT BREAKDOWN BARS */
+.debt-chart{background:linear-gradient(145deg,#151f36,#101729);border:1px solid #3b4b75;border-radius:17px;padding:17px;margin:12px 0 16px;box-shadow:0 8px 24px #0005}
+.debt-chart-head,.debt-bar-label{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.debt-chart-head b{font-size:16px;color:#f4f6ff}
+.debt-chart-head span,.debt-bar-label span{color:var(--cyan);font-weight:700;font-size:13px;text-align:right}
+.debt-chart-note{font-size:12px;margin:5px 0 17px}
+.debt-bar-row{margin:13px 0}
+.debt-bar-label b{font-size:13px;min-width:0;overflow-wrap:anywhere}
+.debt-track{height:9px;background:#27334f;border-radius:20px;overflow:hidden;margin-top:8px}
+.debt-fill{height:100%;min-width:3px;border-radius:20px;background:linear-gradient(90deg,#35e7ff,#a66bff);box-shadow:0 0 12px #35e7ff66}
+
 </style>
 </head>
 <body>
@@ -285,7 +297,8 @@ function render(){
  const today=new Date().toISOString().slice(0,10);
  const income=data.entries.filter(e=>e.type==='income'&&e.date===today).reduce((s,e)=>s+Number(e.amount||0),0);
  document.getElementById('today').textContent=money(income);
- document.getElementById('debtList').innerHTML=data.debts.map(d=>'<div class="section"><b>'+esc(d.name)+'</b><br><span>'+money(d.amount)+'</span>'+(Number(d.amount)===0?'<div class="muted">Долг погашен</div>':'')+'<div class="small-actions"><button onclick="editDebt(\''+esc(d.id)+'\')">Изменить</button><button class="danger" onclick="deleteDebt(\''+esc(d.id)+'\')">Удалить</button></div></div>').join('')||'<div class="section muted">Пока кредиторов нет</div>';
+ const debtTotal=data.debts.reduce((sum,d)=>sum+Math.max(0,Number(d.amount)||0),0);
+ document.getElementById('debtList').innerHTML=(debtTotal>0?'<div class="debt-chart"><div class="debt-chart-head"><b>Структура долгов</b><span>'+money(debtTotal)+'</span></div><div class="muted debt-chart-note">Доля каждого долга от общей суммы</div>'+data.debts.filter(d=>Number(d.amount)>0).map(d=>{const share=debtTotal?Math.round(Number(d.amount)/debtTotal*100):0;return '<div class="debt-bar-row"><div class="debt-bar-label"><b>'+esc(d.name)+'</b><span>'+money(d.amount)+' · '+share+'%</span></div><div class="debt-track"><div class="debt-fill" style="width:'+share+'%"></div></div></div>';}).join('')+'</div>':'')+data.debts.map(d=>'<div class="section"><b>'+esc(d.name)+'</b><br><span>'+money(d.amount)+'</span>'+(Number(d.amount)===0?'<div class="muted">Долг погашен</div>':'')+'<div class="small-actions"><button onclick="editDebt(\''+esc(d.id)+'\')">Изменить</button><button class="danger" onclick="deleteDebt(\''+esc(d.id)+'\')">Удалить</button></div></div>').join('')||'<div class="section muted">Пока кредиторов нет</div>';
  const sel=document.getElementById('paymentCreditor'),previous=sel.value;
  sel.innerHTML=data.debts.filter(d=>Number(d.amount)>0).map(d=>'<option value="'+esc(d.id)+'">'+esc(d.name)+' — '+money(d.amount)+'</option>').join('');
  if(!sel.options.length)sel.innerHTML='<option value="">Нет непогашенных долгов</option>';
