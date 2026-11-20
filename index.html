@@ -139,6 +139,7 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <button onclick="show('expenses')">Расходы</button>
 <button onclick="show('savings')">Накопления</button>
 <button onclick="show('schedule')">Платежи</button>
+<button onclick="show('food')">Перекус</button>
 </nav>
 
 <section id="home">
@@ -211,6 +212,19 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <button onclick="addPlan()">＋ Запланировать платёж</button>
 <p class="muted">Здесь будут предстоящие платежи и просроченные планы.</p>
 </div><div id="planList"></div>
+</section>
+
+<section id="food" class="hidden">
+<h3>Что поесть до бюджета?</h3>
+<div class="section">
+<p class="muted">Подберём недорогой вариант, когда хочется перекусить вне дома.</p>
+<label>Мой лимит, ₽</label>
+<input id="foodBudget" type="number" min="50" max="5000" step="50" value="500">
+<button onclick="pickFood()" style="width:100%">🎲 Подобрать, что поесть</button>
+<div id="foodChoice" class="section" style="margin-top:14px">Нажми кнопку — предложу вариант.</div>
+<p class="muted">Цены ориентировочные: меню и стоимость зависят от города, ресторана и акций. Перед заказом проверь цену в приложении.</p>
+</div>
+<div class="section"><b>Идеи для недорогого перекуса</b><div class="muted">Можно выбрать что-то похожее в Ростикс или «Вкусно — и точка».</div></div>
 </section>
 
 <section id="savings" class="hidden">
@@ -342,6 +356,25 @@ function completePlan(id){
 function deletePlan(id){
  if(!confirm('Удалить этот плановый платёж?'))return;
  data.plans=data.plans.filter(p=>p.id!==id);save();
+}
+const foodIdeas=[
+ {name:'Чизбургер + маленькая картошка',place:'«Вкусно — и точка»',price:350},
+ {name:'Бургер с курицей + маленький напиток',place:'«Вкусно — и точка»',price:390},
+ {name:'Шефбургер или похожий куриный бургер',place:'Ростикс',price:400},
+ {name:'Твистер / куриный ролл',place:'Ростикс',price:450},
+ {name:'Два небольших бургера',place:'«Вкусно — и точка»',price:450},
+ {name:'Пирожок + чизбургер + чай/вода',place:'«Вкусно — и точка»',price:300},
+ {name:'Небольшая порция курицы или стрипсы',place:'Ростикс',price:480},
+ {name:'Картошка + соус + небольшой бургер',place:'Ростикс или «Вкусно — и точка»',price:490}
+];
+function pickFood(){
+ const budget=Number(document.getElementById('foodBudget').value);
+ const out=document.getElementById('foodChoice');
+ if(!Number.isFinite(budget)||budget<50)return out.textContent='Укажи бюджет от 50 ₽.';
+ const options=foodIdeas.filter(x=>x.price<=budget);
+ if(!options.length){out.textContent='Пока нет вариантов в этот бюджет. Попробуй увеличить лимит.';return;}
+ const choice=options[Math.floor(Math.random()*options.length)];
+ out.innerHTML='<b>'+esc(choice.name)+'</b><br><span class="muted">'+esc(choice.place)+'</span><div class="total">'+money(choice.price)+'</div><span class="muted">Оставишь в бюджете примерно '+money(budget-choice.price)+'.</span>';
 }
 function addAunt(){
  const amount=Number(document.getElementById('auntAmount').value);
