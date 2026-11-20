@@ -18,8 +18,8 @@ h1{font-size:24px}
 .stat{background:#1b293d;padding:16px;border-radius:14px}
 .stat small{color:#aab9cc}
 .stat b{display:block;font-size:19px;margin-top:8px}
-nav{display:flex;gap:6px;margin:20px 0}
-nav button{flex:1;padding:11px 4px;font-size:12px}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0}
+nav button{flex:1 1 28%;padding:11px 4px;font-size:12px;min-width:0}
 button{border:0;border-radius:11px;background:#31547e;color:white;padding:13px;font-weight:bold}
 input,select{width:100%;padding:13px;border:1px solid #40516a;border-radius:10px;background:#172438;color:white;margin:7px 0 13px;font-size:16px}
 .section{background:#1b293d;border-radius:14px;padding:15px;margin:10px 0}
@@ -60,6 +60,7 @@ label{font-size:13px;color:#bdc9d9}
 <button onclick="show('income')">＋ Доход</button>
 <button onclick="show('expenses')">− Расход</button>
 </div>
+<div class="section"><button onclick="show('expenses')" style="width:100%">Открыть учёт расходов</button></div>
 <div class="section">
 <b>Последние операции</b>
 <div id="recent" class="muted">Пока записей нет</div>
