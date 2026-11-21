@@ -150,6 +150,7 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <button onclick="show('schedule')">Платежи</button>
 <button onclick="show('food')">Перекус</button>
 <button onclick="show('work')">Моя работа</button>
+<button onclick="showProposal()">✍️ Отклики</button>
 </nav>
 
 <section id="home">
@@ -278,8 +279,8 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <b>Мои заказы и отклики</b>
 <div id="jobList" class="muted">Пока заказов нет</div>
 </div>
-<div class="section">
-<b>Генератор откликов клиентам</b>
+<div class="section" id="proposalSection">
+<b>✍️ Генератор откликов клиентам</b>
 <p class="muted">Выбери сохранённый заказ — штаб подготовит черновик сообщения. Проверь детали и убери любые обещания, которые не сможешь выполнить.</p>
 <label>Заказ</label>
 <select id="proposalJobSelect"><option value="">Сначала сохрани заказ</option></select>
@@ -321,6 +322,7 @@ function money(n){return Number(n||0).toLocaleString('ru-RU',{maximumFractionDig
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data));render();}
 function show(id){document.querySelectorAll('body > section').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');}
+function showProposal(){show("work");document.getElementById("proposalSection").scrollIntoView({behavior:"smooth",block:"start"});}
 function editDebt(id){
  const d=data.debts.find(x=>x.id===id);if(!d)return;
  const name=prompt('Имя кредитора:',d.name);if(name===null)return;
