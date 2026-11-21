@@ -1,5 +1,9 @@
 name: Refresh freelance jobs feed
 on:
+  push:
+    paths:
+      - 'scripts/update_jobs_feed.py'
+      - '.github/workflows/refresh-jobs-feed.yml'
   schedule:
     - cron: "17 */4 * * *"
   workflow_dispatch:
