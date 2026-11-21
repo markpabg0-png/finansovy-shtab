@@ -112,6 +112,10 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 .plan-late .plan-head span{color:#ff86aa}
 .plan-done{opacity:.72}
 .plan-done .plan-head span{color:#72e6b1}
+.section a{overflow-wrap:anywhere}
+#work .item{padding:14px 0}
+#work .small-actions{flex-wrap:wrap}
+#work .small-actions button{flex:1 1 42%}
 /* KEEP ALL SIX NAV TABS VISIBLE */
 nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
 nav button{width:100%;min-width:0;white-space:normal;}
@@ -140,6 +144,7 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <button onclick="show('savings')">Накопления</button>
 <button onclick="show('schedule')">Платежи</button>
 <button onclick="show('food')">Перекус</button>
+<button onclick="show('work')">Моя работа</button>
 </nav>
 
 <section id="home">
@@ -237,6 +242,41 @@ nav button{width:100%;min-width:0;white-space:normal;}
 </div>
 </section>
 
+ 
+<section id="work" class="hidden">
+<h3>Моя работа · заказы и практика</h3>
+<div class="section">
+<b>Задание на сегодня</b>
+<div id="dailyTask" style="margin:10px 0;line-height:1.6"></div>
+<div class="muted">Задания здесь помогают собирать портфолио. Свежие вакансии и заказы ChatGPT подбирает в вечерней подборке; найденные варианты можно сохранять ниже.</div>
+</div>
+<div class="section">
+<b>Сохранить заказ</b>
+<label>Название / что нужно сделать</label>
+<input id="jobTitle" placeholder="Например, лендинг для барбершопа">
+<label>Ссылка на объявление</label>
+<input id="jobUrl" type="url" placeholder="https://...">
+<label>Бюджет, ₽ (если известен)</label>
+<input id="jobBudget" type="number" min="0" step="1" placeholder="15000">
+<label>Заметка / требования</label>
+<input id="jobNote" placeholder="Срок, стек, контакты без личных секретов">
+<button onclick="addJob()">＋ Сохранить заказ</button>
+</div>
+<div class="section">
+<b>Мои заказы и отклики</b>
+<div id="jobList" class="muted">Пока заказов нет</div>
+</div>
+<div class="section">
+<b>Заработано на разработке</b>
+<div class="total" id="workEarned">0 ₽</div>
+<label>Добавить полученную оплату, ₽</label>
+<input id="workIncomeAmount" type="number" min="0.01" step="0.01" placeholder="5000">
+<label>За какой проект</label>
+<input id="workIncomeNote" placeholder="Лендинг для клиента">
+<button onclick="addWorkIncome()">Записать оплату</button>
+</div>
+</section>
+
 <script>
 const STORAGE_KEY='financeData';
 let data;
@@ -246,6 +286,8 @@ if(!data||typeof data!=='object') data={debts:[],entries:[],aunt:0};
 if(!Array.isArray(data.debts)) data.debts=[];
 if(!Array.isArray(data.entries)) data.entries=[];
 if(!Array.isArray(data.plans)) data.plans=[];
+if(!Array.isArray(data.jobs)) data.jobs=[];
+if(!Array.isArray(data.workPayments)) data.workPayments=[];
 if(!Number.isFinite(Number(data.aunt))) data.aunt=0;
 function makeId(){return 'd-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);}
 data.debts.forEach(d=>{if(!d.id)d.id=makeId();d.amount=Math.max(0,Number(d.amount)||0);});
@@ -298,6 +340,33 @@ function deleteEntry(id){
  }
  if(e.type==='aunt')data.aunt=Math.max(0,Math.round((Number(data.aunt)-Number(e.amount||0))*100)/100);
  data.entries.splice(index,1);save();
+}
+const practiceTasks=[
+"Создай папку портфолио и README: кто ты, какие задачи решаешь, как с тобой связаться. Не публикуй личные данные.",
+"Собери первый экран сайта барбершопа: заголовок, короткое описание и кнопку записи.",
+"Добавь на демо-сайт блок услуг и цены в аккуратных карточках.",
+"Сделай адаптивную мобильную версию: проверь ширину 360–390 px и отсутствие горизонтальной прокрутки.",
+"Добавь контакты, адрес-заглушку и понятный призыв к действию. Не выдумывай данные реального бизнеса.",
+"Проверь формы и кнопки: все ли работают, есть ли сообщения об ошибках.",
+"Сделай скриншоты проекта и короткое описание кейса для портфолио."
+];
+function getDailyTask(){const day=Math.floor(Date.now()/86400000);return practiceTasks[((day%practiceTasks.length)+practiceTasks.length)%practiceTasks.length];}
+function addJob(){
+ const title=document.getElementById('jobTitle').value.trim(),url=document.getElementById('jobUrl').value.trim(),budget=Number(document.getElementById('jobBudget').value||0),note=document.getElementById('jobNote').value.trim();
+ if(!title)return alert('Укажи, что нужно сделать');
+ if(url&&!/^https?:\\/\\//i.test(url))return alert('Ссылка должна начинаться с http:// или https://');
+ if(!Number.isFinite(budget)||budget<0)return alert('Проверь бюджет');
+ data.jobs.unshift({id:makeId(),title,url,budget,note,status:'Новый',createdAt:new Date().toISOString().slice(0,10)});
+ ['jobTitle','jobUrl','jobBudget','jobNote'].forEach(id=>document.getElementById(id).value='');save();
+}
+function setJobStatus(id,status){const job=data.jobs.find(j=>j.id===id);if(!job)return;job.status=status;save();}
+function deleteJob(id){if(!confirm('Удалить сохранённый заказ?'))return;data.jobs=data.jobs.filter(j=>j.id!==id);save();}
+function addWorkIncome(){
+ const amount=Number(document.getElementById('workIncomeAmount').value),note=document.getElementById('workIncomeNote').value.trim();
+ if(!Number.isFinite(amount)||amount<=0)return alert('Введи положительную сумму');
+ data.workPayments.push({id:makeId(),amount,note,date:new Date().toISOString().slice(0,10)});
+ data.entries.push({id:makeId(),type:'income',amount,note:'Разработка: '+(note||'оплата проекта'),date:new Date().toISOString().slice(0,10)});
+ document.getElementById('workIncomeAmount').value='';document.getElementById('workIncomeNote').value='';save();
 }
 function addDebt(){
  const name=document.getElementById('person').value.trim(),amount=Number(document.getElementById('debtAmount').value);
@@ -384,6 +453,12 @@ function addAunt(){
  document.getElementById('auntAmount').value='';save();
 }
 function render(){
+ const daily=document.getElementById('dailyTask');if(daily)daily.textContent=getDailyTask();
+ const earned=(data.workPayments||[]).reduce((sum,p)=>sum+(Number(p.amount)||0),0);
+ const earnedEl=document.getElementById('workEarned');if(earnedEl)earnedEl.textContent=money(earned);
+ const jobList=document.getElementById('jobList');
+ if(jobList)jobList.innerHTML=(data.jobs||[]).map(j=>'<div class="item"><b>'+esc(j.title)+'</b><br><span class="muted">'+(j.budget?money(j.budget):'Бюджет не указан')+' · '+esc(j.status)+'</span>'+(j.url?'<br><a href="'+esc(j.url)+'" target="_blank" rel="noopener noreferrer" style="color:#35e7ff">Открыть объявление ↗</a>':'')+(j.note?'<br><small>'+esc(j.note)+'</small>':'')+'<div class="small-actions"><button onclick="setJobStatus(\''+esc(j.id)+'\',\'Откликнулся\')">Откликнулся</button><button onclick="setJobStatus(\''+esc(j.id)+'\',\'В работе\')">В работе</button><button onclick="setJobStatus(\''+esc(j.id)+'\',\'Завершён\')">Завершён</button><button class="danger" onclick="deleteJob(\''+esc(j.id)+'\')">Удалить</button></div></div>').join('')||'<span class="muted">Сохраняй сюда подходящие заказы из вечерней подборки.</span>';
+
  const debt=data.debts.reduce((s,d)=>s+(Number(d.amount)||0),0);
  document.getElementById('total').textContent=money(data.debts.length?debt:1500000);
  document.getElementById('aunt').textContent=money(data.aunt);
