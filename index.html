@@ -118,6 +118,7 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 #work .small-actions button{flex:1 1 42%}
 #jobsFeedList .feed-job{padding:13px 0;border-bottom:1px solid #293858}
 #jobsFeedList .feed-job:last-child{border:0}
+#proposalText{margin-top:7px;line-height:1.55}#proposalText:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px #35e7ff1c}
 .feed-meta{font-size:12px;color:#9fb0d0;margin:6px 0}
 .feed-job a{color:#35e7ff}
 /* KEEP ALL SIX NAV TABS VISIBLE */
@@ -278,6 +279,19 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <div id="jobList" class="muted">Пока заказов нет</div>
 </div>
 <div class="section">
+<b>Генератор откликов клиентам</b>
+<p class="muted">Выбери сохранённый заказ — штаб подготовит черновик сообщения. Проверь детали и убери любые обещания, которые не сможешь выполнить.</p>
+<label>Заказ</label>
+<select id="proposalJobSelect"><option value="">Сначала сохрани заказ</option></select>
+<label>Стиль сообщения</label>
+<select id="proposalTone"><option value="short">Коротко и по делу</option><option value="friendly">Дружелюбно</option><option value="detailed">Подробно</option></select>
+<button onclick="generateProposal()" style="width:100%">✍️ Составить отклик</button>
+<label>Текст отклика — можно отредактировать</label>
+<textarea id="proposalText" rows="9" style="width:100%;padding:13px;border:1px solid #354667;border-radius:12px;background:#0c1324;color:#f4f6ff;font:inherit;resize:vertical" placeholder="Здесь появится черновик отклика…"></textarea>
+<div class="small-actions"><button onclick="copyProposal()">Скопировать текст</button><button onclick="document.getElementById('proposalText').value=''">Очистить</button></div>
+<p class="muted">Совет: не отправляй одинаковый текст всем. Добавь одну конкретную деталь из задания и приложи портфолио, если оно подходит.</p>
+</div>
+<div class="section">
 <b>Заработано на разработке</b>
 <div class="total" id="workEarned">0 ₽</div>
 <label>Добавить полученную оплату, ₽</label>
@@ -387,6 +401,30 @@ function renderJobsFeed(){
  const items=jobsFeedItems.filter(j=>jobsFeedFilter==='all'||j.beginnerFriendly);
  box.innerHTML=items.map(j=>'<div class="feed-job"><b>'+esc(j.title)+'</b><div class="feed-meta">'+esc(j.source||'Биржа')+' · '+esc(j.publishedAt||'Дата не указана')+' · '+(j.budget?money(j.budget):'Бюджет не указан')+(j.beginnerFriendly?' · подходит для старта':'')+'</div>'+(j.summary?'<div class="muted">'+esc(j.summary)+'</div>':'')+'<div class="small-actions"><button onclick="saveFeedJob(\''+esc(j.id)+'\')">＋ Сохранить</button>'+(j.url?'<button onclick="window.open(\''+esc(j.url)+'\',\'_blank\',\'noopener\')">Открыть заказ ↗</button>':'')+'</div></div>').join('')||'<div class="muted">Подходящих новых заказов пока нет. Попробуй позже.</div>';
 }
+function generateProposal(){
+ const select=document.getElementById('proposalJobSelect'),job=data.jobs.find(j=>j.id===select.value);
+ if(!job)return alert('Сначала сохрани заказ и выбери его в списке.');
+ const tone=document.getElementById('proposalTone').value;
+ const title=String(job.title||'ваш проект').trim();
+ const details=String(job.note||'').trim();
+ const budget=Number(job.budget)>0?'Обсудим объём работ и бюджет около '+money(job.budget)+'.':'Предлагаю сначала уточнить объём работ, сроки и бюджет.';
+ let message='';
+ if(tone==='short'){
+  message='Здравствуйте! Заинтересовал ваш проект «'+title+'».\n\nГотов обсудить задачу и предложить понятный план реализации. Перед стартом уточню ключевые требования, сроки и критерии готовности.\n\nПодскажите, пожалуйста, что для вас самое важное в результате?';
+ }else if(tone==='detailed'){
+  message='Здравствуйте! Посмотрел описание проекта «'+title+'» и хотел бы обсудить возможность помочь.\n\nЯ занимаюсь созданием сайтов и веб-интерфейсов с использованием современных инструментов разработки и AI-помощников. Предлагаю сначала согласовать структуру, нужные функции и ожидаемый результат, затем разбить работу на понятные этапы.\n\n'+(details?'Из сохранённых требований отметил: '+details+'.\n\n':'')+budget+'\n\nУточните, пожалуйста: есть ли примеры сайтов, которые вам нравятся, и какой срок запуска для вас желателен?';
+ }else{
+  message='Здравствуйте! Увидел ваш проект «'+title+'» — хотел бы предложить свою помощь.\n\nГотов внимательно разобраться в задаче, согласовать структуру и функциональность, а затем двигаться по этапам, чтобы вы видели промежуточный результат.\n\n'+(details?'Отдельно учту ваши требования: '+details+'.\n\n':'')+'Расскажите, пожалуйста, какие функции для вас обязательны и к какой дате нужен результат? После этого смогу точнее оценить объём и сроки.';
+ }
+ document.getElementById('proposalText').value=message;
+}
+function copyProposal(){
+ const field=document.getElementById('proposalText');
+ if(!field.value.trim())return alert('Сначала составь текст отклика.');
+ field.focus();field.select();
+ try{const ok=document.execCommand('copy');alert(ok?'Текст отклика скопирован. Перед отправкой проверь его.':'Не удалось скопировать автоматически — выдели текст и скопируй вручную.');}
+ catch(e){alert('Выдели текст и скопируй его вручную.');}
+}
 function addJob(){
  const title=document.getElementById('jobTitle').value.trim(),url=document.getElementById('jobUrl').value.trim(),budget=Number(document.getElementById('jobBudget').value||0),note=document.getElementById('jobNote').value.trim();
  if(!title)return alert('Укажи, что нужно сделать');
@@ -495,6 +533,13 @@ function render(){
  const jobList=document.getElementById('jobList');
  if(jobList)jobList.innerHTML=(data.jobs||[]).map(j=>'<div class="item"><b>'+esc(j.title)+'</b><br><span class="muted">'+(j.budget?money(j.budget):'Бюджет не указан')+' · '+esc(j.status)+'</span>'+(j.url?'<br><a href="'+esc(j.url)+'" target="_blank" rel="noopener noreferrer" style="color:#35e7ff">Открыть объявление ↗</a>':'')+(j.note?'<br><small>'+esc(j.note)+'</small>':'')+'<div class="small-actions"><button onclick="setJobStatus(\''+esc(j.id)+'\',\'Откликнулся\')">Откликнулся</button><button onclick="setJobStatus(\''+esc(j.id)+'\',\'В работе\')">В работе</button><button onclick="setJobStatus(\''+esc(j.id)+'\',\'Завершён\')">Завершён</button><button class="danger" onclick="deleteJob(\''+esc(j.id)+'\')">Удалить</button></div></div>').join('')||'<span class="muted">Сохраняй сюда подходящие заказы из вечерней подборки.</span>';
 
+ const proposalSelect=document.getElementById('proposalJobSelect');
+ if(proposalSelect){
+  const previous=proposalSelect.value;
+  proposalSelect.innerHTML=(data.jobs||[]).map(j=>'<option value="'+esc(j.id)+'">'+esc(j.title)+'</option>').join('');
+  if(!proposalSelect.options.length)proposalSelect.innerHTML='<option value="">Сначала сохрани заказ</option>';
+  else if(data.jobs.some(j=>j.id===previous))proposalSelect.value=previous;
+ }
  const debt=data.debts.reduce((s,d)=>s+(Number(d.amount)||0),0);
  document.getElementById('total').textContent=money(data.debts.length?debt:1500000);
  document.getElementById('aunt').textContent=money(data.aunt);
