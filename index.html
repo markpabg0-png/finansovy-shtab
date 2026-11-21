@@ -116,6 +116,10 @@ button.danger{background:linear-gradient(120deg,#71334f,#a33d59);border-color:#b
 #work .item{padding:14px 0}
 #work .small-actions{flex-wrap:wrap}
 #work .small-actions button{flex:1 1 42%}
+#jobsFeedList .feed-job{padding:13px 0;border-bottom:1px solid #293858}
+#jobsFeedList .feed-job:last-child{border:0}
+.feed-meta{font-size:12px;color:#9fb0d0;margin:6px 0}
+.feed-job a{color:#35e7ff}
 /* KEEP ALL SIX NAV TABS VISIBLE */
 nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
 nav button{width:100%;min-width:0;white-space:normal;}
@@ -251,6 +255,13 @@ nav button{width:100%;min-width:0;white-space:normal;}
 <div class="muted">Задания здесь помогают собирать портфолио. Свежие вакансии и заказы ChatGPT подбирает в вечерней подборке; найденные варианты можно сохранять ниже.</div>
 </div>
 <div class="section">
+<b>Свежие заказы с бирж</b>
+<p class="muted">Лента обновляется автоматически несколько раз в день. Показываем подходящие задачи по сайтам, лендингам, вёрстке и простой автоматизации.</p>
+<div class="small-actions"><button onclick="loadJobsFeed()">↻ Обновить ленту</button><button onclick="setFeedFilter('all')">Все подходящие</button><button onclick="setFeedFilter('beginner')">Для старта</button></div>
+<div id="jobsFeedStatus" class="muted" style="margin:10px 0">Загружаю свежие заказы…</div>
+<div id="jobsFeedList"></div>
+</div>
+<div class="section">
 <b>Сохранить заказ</b>
 <label>Название / что нужно сделать</label>
 <input id="jobTitle" placeholder="Например, лендинг для барбершопа">
@@ -351,6 +362,31 @@ const practiceTasks=[
 "Сделай скриншоты проекта и короткое описание кейса для портфолио."
 ];
 function getDailyTask(){const day=Math.floor(Date.now()/86400000);return practiceTasks[((day%practiceTasks.length)+practiceTasks.length)%practiceTasks.length];}
+let jobsFeedItems=[],jobsFeedFilter='all';
+function setFeedFilter(filter){jobsFeedFilter=filter;renderJobsFeed();}
+async function loadJobsFeed(){
+ const status=document.getElementById('jobsFeedStatus');
+ if(status)status.textContent='Обновляю список…';
+ try{
+  const response=await fetch('./jobs-feed.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error('feed unavailable');
+  const payload=await response.json();
+  jobsFeedItems=Array.isArray(payload.jobs)?payload.jobs:[];
+  if(status)status.textContent='Обновлено: '+(payload.updatedAt?new Date(payload.updatedAt).toLocaleString('ru-RU'):'время неизвестно')+' · Источники: FL.ru и Freelancehunt';
+  renderJobsFeed();
+ }catch(e){if(status)status.textContent='Не удалось загрузить ленту. Проверь подключение и попробуй ещё раз.';}
+}
+function saveFeedJob(id){
+ const j=jobsFeedItems.find(x=>x.id===id);if(!j)return;
+ if(data.jobs.some(x=>x.sourceId===j.id))return alert('Этот заказ уже сохранён в «Мои заказы».');
+ data.jobs.unshift({id:makeId(),sourceId:j.id,title:j.title,url:j.url||'',budget:Number(j.budget)||0,note:(j.source||'')+' · '+(j.publishedAt||'')+' · '+(j.summary||''),status:'Новый',createdAt:new Date().toISOString().slice(0,10)});
+ save();alert('Заказ сохранён в «Мои заказы и отклики».');
+}
+function renderJobsFeed(){
+ const box=document.getElementById('jobsFeedList');if(!box)return;
+ const items=jobsFeedItems.filter(j=>jobsFeedFilter==='all'||j.beginnerFriendly);
+ box.innerHTML=items.map(j=>'<div class="feed-job"><b>'+esc(j.title)+'</b><div class="feed-meta">'+esc(j.source||'Биржа')+' · '+esc(j.publishedAt||'Дата не указана')+' · '+(j.budget?money(j.budget):'Бюджет не указан')+(j.beginnerFriendly?' · подходит для старта':'')+'</div>'+(j.summary?'<div class="muted">'+esc(j.summary)+'</div>':'')+'<div class="small-actions"><button onclick="saveFeedJob(\''+esc(j.id)+'\')">＋ Сохранить</button>'+(j.url?'<button onclick="window.open(\''+esc(j.url)+'\',\'_blank\',\'noopener\')">Открыть заказ ↗</button>':'')+'</div></div>').join('')||'<div class="muted">Подходящих новых заказов пока нет. Попробуй позже.</div>';
+}
 function addJob(){
  const title=document.getElementById('jobTitle').value.trim(),url=document.getElementById('jobUrl').value.trim(),budget=Number(document.getElementById('jobBudget').value||0),note=document.getElementById('jobNote').value.trim();
  if(!title)return alert('Укажи, что нужно сделать');
@@ -502,6 +538,7 @@ function render(){
 }
 localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
 render();
+loadJobsFeed();
 if(window.Telegram?.WebApp){Telegram.WebApp.ready();Telegram.WebApp.expand();}
 </script>
 </body>
