@@ -354,7 +354,7 @@ function getDailyTask(){const day=Math.floor(Date.now()/86400000);return practic
 function addJob(){
  const title=document.getElementById('jobTitle').value.trim(),url=document.getElementById('jobUrl').value.trim(),budget=Number(document.getElementById('jobBudget').value||0),note=document.getElementById('jobNote').value.trim();
  if(!title)return alert('Укажи, что нужно сделать');
- if(url&&!/^https?:\\/\\//i.test(url))return alert('Ссылка должна начинаться с http:// или https://');
+ if(url){try{const parsed=new URL(url);if(!['http:','https:'].includes(parsed.protocol))throw new Error('scheme');}catch(e){return alert('Укажи корректную ссылку, начинающуюся с http:// или https://');}}
  if(!Number.isFinite(budget)||budget<0)return alert('Проверь бюджет');
  data.jobs.unshift({id:makeId(),title,url,budget,note,status:'Новый',createdAt:new Date().toISOString().slice(0,10)});
  ['jobTitle','jobUrl','jobBudget','jobNote'].forEach(id=>document.getElementById(id).value='');save();
