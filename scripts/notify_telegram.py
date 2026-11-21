@@ -34,7 +34,33 @@ def telegram_send(token, chat_id, text):
     if not payload.get("ok"):
         raise RuntimeError("Telegram API rejected sendMessage")
 
+def send_test_notification():
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if not token or not chat_id:
+        raise RuntimeError("Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in GitHub Actions secrets.")
+    test = read_json(Path("test-notification.json"), {})
+    title = html.escape((test.get("title") or "Тестовый заказ")[:180])
+    summary = html.escape((test.get("summary") or "").strip()[:420])
+    budget = test.get("budget") or 0
+    budget_line = f"💰 Бюджет: <b>{html.escape(str(budget))}</b>" if budget else "💰 Бюджет не указан"
+    message = (
+        "🧪 <b>ТЕСТ УВЕДОМЛЕНИЙ — это не реальный заказ</b>\n\n"
+        f"<b>{title}</b>\n"
+        "📌 Источник: Тест системы\n"
+        f"{budget_line}\n"
+        + (f"\n{summary}\n" if summary else "")
+        + "\nЕсли ты видишь это сообщение, доставка в Telegram работает."
+    )
+    telegram_send(token, chat_id, message)
+    print("Test notification delivered.")
+
+
 def main():
+    if Path("test-notification.json").exists():
+        send_test_notification()
+        return
+
     feed = read_json(FEED, {"jobs": []})
     jobs = feed.get("jobs") or []
     state = read_json(STATE, None)
