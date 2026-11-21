@@ -1,9 +1,390 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-11-21T22:30:20.551755+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
-  "jobs": []
+  "jobs": [
+    {
+      "id": "freelancehunt-cf7edb9156463c",
+      "title": "Настроить контекстную рекламу и поисковую оптимизацию - 10000UAH",
+      "url": "https://freelancehunt.com/project/nalashtuvati-kontekstnu-reklamu-ta-poshukovu-optimizatsiyu/1665976.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T18:22:22+00:00",
+      "summary": "Интернет-магазин настольных игр (Одесса / Украина). Имеющийся аккаунт Google Ads с критическими ошибками. Цель - получать качественные лиды и продажи по адекватной стоимости. 1. Техническая часть - Настроить отслеживание конверсий с передачей стоимости транзакций в Google Ads через GA4 (сайт использует...",
+      "budget": 10000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-d3140a4435fc88",
+      "title": "Перенос или создание сайта для художницы и мастерицы керамики - 15000UAH",
+      "url": "https://freelancehunt.com/project/perenesennya-abo-stvorennya-saytu-dlya-hudozhnitsi/1665973.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T18:06:00+00:00",
+      "summary": "Добрый день!У нас есть собственный домен ketmade.com с имеющимся хостингом, доступ к которому есть, но он находится у другого разработчика. Также у нас есть отдельная страница на платформе другого разработчика, которая обновлялась и содержит актуальную информацию:https://share.google/1Rr1DsM4iFYpxi0W8Ищем...",
+      "budget": 15000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-5b10eb8abe4af1",
+      "title": "Реклама недорогих товаров",
+      "url": "https://freelancehunt.com/project/reklama-nedorogih-tovariv/1665972.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T17:43:55+00:00",
+      "summary": "Специалист Google Ads для рекламы недорогих товаров Prom.ua Ищу специалиста по Google Ads для запуска и ведения отдельной рекламной кампании интернет-магазина на Prom.ua. О магазине: Интернет-магазин Berlintehniks. Необходимо рекламировать примерно 100-150 товаров. Есть действующие Google Ads и Merchant...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-edbc609f2f4bd7",
+      "title": "Разработка системы автоматического сбора и публикации мероприятий на WordPress",
+      "url": "https://freelancehunt.com/project/razrabotka-sistemyi-avtomaticheskogo-sbora-publikatsii/1665961.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T15:48:37+00:00",
+      "summary": "Разработка системы автоматического сбора и публикации мероприятий на WordPress Ищем разработчика для создания системы автоматического сбора региональных мероприятий, с последующей публикацией в календаре нашего сайта на WordPress. Задача: Разработать систему, которая будет автоматически: - Собирать...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-579b5ce140671a",
+      "title": "Создание промокарток товара (1 товар - 8 карточек) согласно ТЗ для наполнения сайта",
+      "url": "https://freelancehunt.com/project/stvorennya-promokartok-tovaru-tovar/1665959.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T15:27:52+00:00",
+      "summary": "Здравствуйте, нужно сделать промокарты для витаминов на сайт 1 товар - 8 карточек В дальнейшем возможна сотрудничество по аналогичным проектам на 70 товаров Техническое задание прилагаю Сайт конкурентов, где хорошо реализованы данные карточки и тот уровень карточек, который нам нужен, вот: https://perlahelsa.ua/triple-magnesium Первый...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-c76ebd9b8c0f69",
+      "title": "Простой телеграм бот по продаже под систем картриджей и жидкостей",
+      "url": "https://freelancehunt.com/project/prostiy-telegram-bot-po-prodazhi/1665939.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T13:10:44+00:00",
+      "summary": "Необходимо создать телеграм-бота с продажами под систему картриджей, ароматизаторов с простым интерфейсом и функционалом",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-1668767ebd8e5e",
+      "title": "Создание сайта-приветствия с днем рождения - 900UAH",
+      "url": "https://freelancehunt.com/project/stvorennya-saytu-privitannya-dnem-narodzhennya/1665938.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T13:10:17+00:00",
+      "summary": "Создать простой, красивый и праздничный сайт-приветствие с днем рождения для конкретного человека. Сайт должен открываться по ссылке на телефоне и компьютере. Что должно быть на сайте: Главная страница: надпись «С Днем рождения!», имя именинника и кнопка открытия поздравления. Поздравление: персональный...",
+      "budget": 900,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-9730b1368f68f1",
+      "title": "Интернет-магазин",
+      "url": "https://freelancehunt.com/project/internet-magazin/1665937.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T13:07:24+00:00",
+      "summary": "Интересует разработка интернет-магазина, сайта, желательно на OpenCart. Интересуют сроки и стоимость. Для примера, какой именно хочу - вот этот сайт по ссылке:https://ecomama.com.ua/ Жду предложений.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-83e11132947db2",
+      "title": "Media - 5000UAH",
+      "url": "https://freelancehunt.com/project/media/1665932.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T12:52:12+00:00",
+      "summary": "Нужно подправить дизайн , перенести материалы с веб архива и ещё по мелочам. ВордПресс. До февраля 2027 года",
+      "budget": 5000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-c8b33f0c454757",
+      "title": "Создание Shopify-магазина",
+      "url": "https://freelancehunt.com/project/ctvorennya-shopify-magazin/1665899.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T10:30:21+00:00",
+      "summary": "Здравствуйте. Планирую создать интернет-магазин на Shopify для продажи профессиональной футбольной обуви Nike и Adidas. Вот пример магазина, дизайн и структуру которого я хотел бы использовать в качестве ориентира: https://www.classicsoccercleats.com/collections/all-products https://classicbootsmatter.com/collections/all?filter.v.availability=1 https://shoptcrampons.com/en-us/collections/nike-tiempo-en?utm_source=ig&",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-216ee5c1101a65",
+      "title": "Доработка сайта на опенкарт - 10000UAH",
+      "url": "https://freelancehunt.com/project/dorabotka-sayta-na-openkart/1665898.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T10:09:30+00:00",
+      "summary": "Добрый день Нужен хороший программист для внесения задач по сайту на опенкарт Нужно оптимизировать сайт и сделать бонусную систему для сайта Все подробности кандидату",
+      "budget": 10000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-aaed85ca0e06d1",
+      "title": "Наполнение сайта товаром WooCommerce 5 товаров.",
+      "url": "https://freelancehunt.com/project/napovnennya-saytu-tovarom-woocommerce-tovariv/1665890.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T08:46:52+00:00",
+      "summary": "Сайт на немецком языке. Нужно брать товар у поставщика, фото, описание. Атрибуты согласуем перед началом работы, так как сайт поставщика не на WooCommerce, там структура может несколько отличаться, или быть неудобной. Предлагаю первую группу из 5 товаров, это категория выставочных товаров (роллапы, стенды,...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-32e9a9d3c03426",
+      "title": "Создание страницы товара на WordPress по готовому образцу дизайна - 2000UAH",
+      "url": "https://freelancehunt.com/project/stvorennya-storinki-tovaru-na-wordpress-za/1665885.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T08:02:33+00:00",
+      "summary": "Есть готовый сайт на WordPress (без интернет-магазина). https://sklad24.com.ua/ru/product/elektricheskij-shtabeler-heli-cdd12j-3500/ Необходимо разработать и добавить одну страницу товара с дизайном карточки в соответствии с предоставленным образцом. Пример дизайна: Требования: Повторить структуру...",
+      "budget": 2000,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-5c71607415968a",
+      "title": "IVAN.FIT — персональный бренд тренера Ивана Нечепуренка. - 20000UAH",
+      "url": "https://freelancehunt.com/project/ivan-fit-personalniy-brend-trenera-ivana/1665881.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T07:39:09+00:00",
+      "summary": "Ищу веб-разработчика для создания персонального сайта IVAN.FIT Нужен опытный веб-разработчик или небольшая команда для создания современного персонального сайта фитнес-тренера. Проект: IVAN.FIT — персональный бренд тренера Ивана Нечепуренка. Основные требования: Современный дизайн в стиле Premium Fitness...",
+      "budget": 20000,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-d1d68a88c8d771",
+      "title": "Создание сайта",
+      "url": "https://freelancehunt.com/project/stvorennya-saytu/1665878.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T06:39:16+00:00",
+      "summary": "Необходимо разработать интернет-магазин мягкой мебели на OpenCart. Задача включает разработку дизайна, адаптивную верстку и интеграцию готового шаблона с OpenCart. В качестве ориентира берем сайт-пример - mybed pl. Нужно разработать собственный дизайн на его основе, учитывая общую стилистику, структуру...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-e105a849206509",
+      "title": "создать сайт / smm панель",
+      "url": "https://www.fl.ru/projects/5529994/sozdat-sayt---smm-panel.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-21T06:05:56+00:00",
+      "summary": "Нужно создать сайт / смм панель. Работа как через апи, так и ручные заказы. Минимализм в дизайне. Структура главная страница с формой регистрации / форма входа, страница...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-85afbd49e2e8ae",
+      "title": "Одностраничный сайт для кофейни с бронированием столика через AI-чат - 20000UAH",
+      "url": "https://freelancehunt.com/project/odnostorinkoviy-sayt-dlya-kav-yarni-bronyuvannyam/1665801.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T15:35:32+00:00",
+      "summary": "Нужен одностраничный сайт для небольшой кофейни. Что должно быть на странице: • Меню • Часы работы • Карта с расположением кофейни • Бронирование столика через AI-чат: посетитель в чате выбирает дату, время и количество гостей, а чат подтверждает бронирование Требования: • Адаптивный дизайн,...",
+      "budget": 20000,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-254fb7b1eb27ec",
+      "title": "Доработка страниц каталога и категорий WooCommerce (WordPress, UX/UI, калькулятор)",
+      "url": "https://freelancehunt.com/project/doopratsyuvannya-storinok-katalogu-ta-kategoriy-woocommerce/1665786.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T14:30:01+00:00",
+      "summary": "Доработать страницы категорий товаров и страницу каталога \"Продукция\" по тому же принципу, что и карточку товара: на каждой странице есть путь через корзину и путь через заявку. Это косметические правки, а не переработка полностью страниц. Необходимо учитывать UX/UI-дизайн. Страницы категорий и каталога...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-12984b1d8672da",
+      "title": "Нарисовать дизайн лендинга в Figma по шаблону",
+      "url": "https://freelancehunt.com/project/namalyuvati-dizayn-lendingu-figma-po/1665781.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T13:55:37+00:00",
+      "summary": "Необходимо нарисовать дизайн лендинга по шаблону, который я предоставлю в личных сообщениях. Шаблон имеет только желаемую структуру сайта, вам нужно нарисовать современный дизайн и предложить свою цветовую гамму.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-218d60836599f8",
+      "title": "Нужен консольный торговый бот на Python (без графического интерфейса)",
+      "url": "https://www.fl.ru/projects/5529898/nujen-konsolnyiy-torgovyiy-bot-na-python-bez-graficheskogo-interfeysa-.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-20T06:10:37+00:00",
+      "summary": "Здравствуйте! Краткое описание. Нужен консольный торговый бот на Python (без графического интерфейса). Суть задачи: • Бот опрашивает бесплатный внешний API по заданному...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-ca3263b654c783",
+      "title": "Нужно написать бота, который будет автоматически бронить смены (Бюджет: 3 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529882/nujno-napisat-bota-kotoryiy-budet-avtomaticheski-bronit-smenyi.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-19T19:27:40+00:00",
+      "summary": "Нужно написать бота, который будет автоматически бронить смены, которые будут иметь определенный статус. Так же нужен телеграмм бот, который будет иметь интерфейс для...",
+      "budget": 3000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-dc0c5cc297561f",
+      "title": "Логист-Бот WBLogistics",
+      "url": "https://www.fl.ru/projects/5529812/logist-bot-wblogistics.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-19T07:52:00+00:00",
+      "summary": "Ознакомится можно в прикрепленном файле",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-8a6affd0c9b371",
+      "title": "Создание сайта и приложения для кафе",
+      "url": "https://www.fl.ru/projects/5529709/sozdanie-sayta-i-prilojeniya-dlya-kafe.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-18T09:55:40+00:00",
+      "summary": "Добрый день. Нужно сделать сайт для кафе Сейчас есть уже сайт, но у нас нет ни доставки ни программы лояльности. Нужна программа лояльности для удержания клиентов, дизайн и...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5f7a3dfc4bea10",
+      "title": "3D просмотр на сайте",
+      "url": "https://www.fl.ru/projects/5529621/3d-prosmotr-na-sayte.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T15:52:25+00:00",
+      "summary": "сделать html страницу для просмотра модели в браузере. Есть готовая 3д модель, нужно сделать возможность просматривать её в браузере и добавить кнопки для управления анимацией...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "fl.ru-3fdcfca0dfbbd3",
+      "title": "восстановить резервную копию сайта на бегет",
+      "url": "https://www.fl.ru/projects/5529593/vosstanovit-rezervnuyu-kopiyu-sayta-na-beget.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T12:52:29+00:00",
+      "summary": "Необходимо восстановить резервную копию сайта на бегет. База данных занимает более 10 гб, свободного дискового пространства меньше, добавить нет технической возможности....",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-682249847b315f",
+      "title": "Настроить для моего сайта S3 хранилище (Бюджет: 400 ₽)",
+      "url": "https://www.fl.ru/projects/5529587/nastroit-dlya-moego-sayta-s3-hranilische.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T12:45:28+00:00",
+      "summary": "Здравствуйте! Мне нужно специалист который настроит S3 хранилище моих файлов и т д. У них есть документация, нужно чтобы каждый день делались копии моего сайта и файлы...",
+      "budget": 400,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-47b956ed415453",
+      "title": "Веб-платформа для аналитики трейд-маркетинга и подготовки обучающих материалов с ИИ-агентом (для всех)",
+      "url": "https://www.fl.ru/projects/5529553/veb-platforma-dlya-analitiki-treyd-marketinga-i-podgotovki-obuchayuschih-materialov-s-ii-agentom.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T10:17:48+00:00",
+      "summary": "Ищем команду или опытного разработчика, чтобы оценить проект и затем его реализовать. Заказчик — производитель бытовой техники. Сейчас его данные из федеральных сетей и от полевого агентства обрабатываются вручную в Excel. Что нужно сделать Ядро платформы: личный кабинет с ролями и правами по сетям и регионам, загрузка Excel-файлов с автоопределением типа, справочники с историей версий по датам, отчёты с фильтрами и ",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "fl.ru-5eded226f7b28c",
+      "title": "Веб-игра «Глубина»: рогалик с прокачкой, предметами и Telegram-ботом (Бюджет: 45 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529509/veb-igra-glubina-rogalik-s-prokachkoy-predmetami-i-telegram-botom.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T05:02:50+00:00",
+      "summary": "Разработать браузерную игру-рогалик на JavaScript с пошаговым заходом в подземелье. Что нужно: - карта подземелья на canvas, пошаговое перемещение и расстановка монстров; -...",
+      "budget": 45000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-6c6a7a6c77aeaa",
+      "title": "Telegram-бот для разбора матчей CS2: статистика, ошибки и советы (Бюджет: 40 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529510/telegram-bot-dlya-razbora-matchey-cs2-statistika-oshibki-i-sovetyi.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T05:02:17+00:00",
+      "summary": "Нужен Telegram-бот, который по итогам матча CS2 показывает статистику игрока и даёт разбор. Что нужно: — приём данных о матче в реальном времени через Game State Integration...",
+      "budget": 40000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5111364a360bea",
+      "title": "Telegram-бот для интернет-магазина: каталог, заказы, оплата и админка (Бюджет: 60 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529508/telegram-bot-dlya-internet-magazina-katalog-zakazyi-oplata-i-adminka.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T04:54:21+00:00",
+      "summary": "Нужен Telegram-бот для интернет-магазина компьютерной техники. Что нужно: — каталог товаров: фото, цены, категории, поиск; — корзина и оформление заказа; — приём оплаты...",
+      "budget": 60000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5c44756e23f01f",
+      "title": "Разработка механизма автоматического сопоставления идентичных товаров по похожим наименованиям",
+      "url": "https://www.fl.ru/projects/5529397/razrabotka-mehanizma-avtomaticheskogo-sopostavleniya-identichnyih-tovarov-po-pohojim-naimenovaniyam.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T09:42:55+00:00",
+      "summary": "Например, есть товар в базе с названием: Туалетная бумага Kleenex PremiumCare 4-слойная 4 рулона Швейцария А вот названия аналогичного товара на других сайтах: сайт А:...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-9d2fd08639af86",
+      "title": "Сбор открытых данных и контактов юрлиц РФ из реестров и сайтов компаний",
+      "url": "https://www.fl.ru/projects/5529392/sbor-otkryityih-dannyih-i-kontaktov-yurlits-rf-iz-reestrov-i-saytov-kompaniy.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T09:28:42+00:00",
+      "summary": "Нужно собрать актуальную таблицу действующих компаний РФ в 3 сегментах (промышленность, медицина, право) для поиска B2B-партнеров. • Выборка юрлиц из открытых источников...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-76fb3e7994c0c2",
+      "title": "Готовая система Steam Gift Bot: свои аккаунты, кошельки и API (для всех)",
+      "url": "https://www.fl.ru/projects/5529382/gotovaya-sistema-steam-gift-bot-svoi-akkauntyi-koshelki-i-api.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T08:52:23+00:00",
+      "summary": "Здравствуйте! Ищу готовую систему для автоматической покупки и отправки игр в Steam в виде подарков. В первую очередь интересует уже работающая система. Также рассмотрю доработку вашего существующего решения, если основные функции можно продемонстрировать до начала работ. Рассматриваю разработчиков из России или Украины. **Главное условие** Система должна работать с моими Steam-аккаунтами и покупать игры непосредстве",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-7342d48d7f5a43",
+      "title": "ТЗ: Прототип ИИ-бота для оценки латте-арта (Вливание «Капучино Сердце»)",
+      "url": "https://www.fl.ru/projects/5529375/tz-prototip-ii-bota-dlya-otsenki-latte-arta-vlivanie-kapuchino-serdtse.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T08:27:08+00:00",
+      "summary": "Разработать прототип системы компьютерного зрения (CV) и мультимодальной нейросети (VLM) для автоматической оценки видео с латте-артом. Бот должен выдавать объективную оценку...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-f2ccddc2bf55a0",
+      "title": "нужен программист сайта DLE",
+      "url": "https://www.fl.ru/projects/5529281/nujen-programmist-sayta-dle.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-15T06:31:20+00:00",
+      "summary": "настройка решение проблем с сайтом и т.д.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-076e3a6c919c10",
+      "title": "Веб-приложение (Бюджет: 20 000 ₽)",
+      "url": "https://www.fl.ru/projects/5528922/veb-prilojenie.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-12T04:55:48+00:00",
+      "summary": "СОЗДАТЬ С НУЛЯ !!! пример который я хочу скину вам лично. кратко сначало ознакомительная страница после регистрации вход основную чать, там создание сметы, КС2, КС3, сохранение...",
+      "budget": 20000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-735e945bd9c37b",
+      "title": "верстка сайта (Бюджет: 40 000 ₽)",
+      "url": "https://www.fl.ru/projects/5528928/verstka-sayta.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-12T04:52:04+00:00",
+      "summary": "-верстка сайта удаленного сервера под 2 предыдущим разработкам на основе карточек товаров существующей базы каталога* -Adobe CRM -Ведение клиентской базы -Организации услуги...",
+      "budget": 40000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-a7ceccbec5eae1",
+      "title": "Разработка Telegram Mini App для обработки фото и видео с пресетами под ключ (для всех)",
+      "url": "https://www.fl.ru/projects/5528888/razrabotka-telegram-mini-app-dlya-obrabotki-foto-i-video-s-presetami-pod-klyuch.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-11T13:15:42+00:00",
+      "summary": "Ищу опытного разработчика или команду для создания полноценного Telegram Mini App для обработки фотографий и видео с авторскими пресетами и платной подпиской. Цель - создать современный, визуально премиальный продукт для продвижения через соц.сеть. Важны качество обработки, удобство использования и стильный дизайн. 1. Обработка фотографий * 15 профессиональных авторских пресетов. * Предпросмотр обработки в реальном в",
+      "budget": 0,
+      "beginnerFriendly": false
+    }
+  ]
 }
