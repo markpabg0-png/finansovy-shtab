@@ -1,5 +1,8 @@
 name: Telegram notifications for new freelance jobs
 on:
+  push:
+    paths:
+      - 'jobs-feed.json'
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
