@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'jobs-feed.json'
+      - 'test-notification.json'
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
