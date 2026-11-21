@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, re, time, urllib.request, xml.etree.ElementTree as ET
+import hashlib, json, re, time, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
@@ -40,7 +40,7 @@ def fetch(source, url):
             try: budget=int(float(re.sub(r"\s","",budget_match.group(1)).replace(",", ".")))
             except Exception: budget=0
         rows.append({
-            "id": source.lower()+"-"+str(abs(hash(link))),
+            "id": source.lower()+"-"+hashlib.sha1(link.encode("utf-8")).hexdigest()[:14],
             "title": title[:220], "url": link, "source": source,
             "publishedAt": pub, "summary": desc[:420],
             "budget": budget,
