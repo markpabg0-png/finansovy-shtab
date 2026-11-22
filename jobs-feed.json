@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-22T05:13:38.415288+00:00",
+  "updatedAt": "2026-11-22T09:00:40.530790+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "fl.ru-b57921e540f228",
+      "title": "Комплексное восстановление сайта, удаление вирусов и устранение технических ошибок",
+      "url": "https://www.fl.ru/projects/5530103/kompleksnoe-vosstanovlenie-sayta-udalenie-virusov-i-ustranenie-tehnicheskih-oshibok.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-22T08:51:16+00:00",
+      "summary": "Необходимо провести комплексную техническую проверку существующего сайта, устранить обнаруженные проблемы и привести его в стабильное рабочее состояние. Список необходимых...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-a2c511a81253f3",
       "title": "Название объявления Запуск онлайн-курса под ключ: лендинг, оплата и автоматизация",
@@ -97,16 +107,6 @@
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-83e11132947db2",
-      "title": "Media - 5000UAH",
-      "url": "https://freelancehunt.com/project/media/1665932.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T12:52:12+00:00",
-      "summary": "Нужно подправить дизайн , перенести материалы с веб архива и ещё по мелочам. ВордПресс. До февраля 2027 года",
-      "budget": 5000,
-      "beginnerFriendly": false
-    },
-    {
       "id": "freelancehunt-c8b33f0c454757",
       "title": "Создание Shopify-магазина",
       "url": "https://freelancehunt.com/project/ctvorennya-shopify-magazin/1665899.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
@@ -185,6 +185,46 @@
       "summary": "Нужен одностраничный сайт для небольшой кофейни. Что должно быть на странице: • Меню • Часы работы • Карта с расположением кофейни • Бронирование столика через AI-чат: посетитель в чате выбирает дату, время и количество гостей, а чат подтверждает бронирование Требования: • Адаптивный дизайн,...",
       "budget": 20000,
       "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-254fb7b1eb27ec",
+      "title": "Доработка страниц каталога и категорий WooCommerce (WordPress, UX/UI, калькулятор)",
+      "url": "https://freelancehunt.com/project/doopratsyuvannya-storinok-katalogu-ta-kategoriy-woocommerce/1665786.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T14:30:01+00:00",
+      "summary": "Доработать страницы категорий товаров и страницу каталога \"Продукция\" по тому же принципу, что и карточку товара: на каждой странице есть путь через корзину и путь через заявку. Это косметические правки, а не переработка полностью страниц. Необходимо учитывать UX/UI-дизайн. Страницы категорий и каталога...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-12984b1d8672da",
+      "title": "Нарисовать дизайн лендинга в Figma по шаблону",
+      "url": "https://freelancehunt.com/project/namalyuvati-dizayn-lendingu-figma-po/1665781.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T13:55:37+00:00",
+      "summary": "Необходимо нарисовать дизайн лендинга по шаблону, который я предоставлю в личных сообщениях. Шаблон имеет только желаемую структуру сайта, вам нужно нарисовать современный дизайн и предложить свою цветовую гамму.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-c274fdc7f88e57",
+      "title": "Название проекта: Сайт для музыкальной школы в Германии (Дюссельдорф), 5–7 страниц",
+      "url": "https://freelancehunt.com/project/nazvanie-proekta-sayt-dlya-muzyikalnoy-shkolyi/1665767.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T12:43:00+00:00",
+      "summary": "Мы открываем небольшую семейную музыкальную школу Harders Musikschuleв Дюссельдорфе (два филиала: Gerresheim и Derendorf). Основное направление — гитара, также фортепиано, джаз, импровизация и другое. Ученики — дети, подростки и взрослые.Ищем специалиста, который создаст новый сайт под ключ, объединит...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-bee1fd42fa18e7",
+      "title": "Крауд-ссылки на украинских форумах, 50–60 шт.",
+      "url": "https://freelancehunt.com/project/kraud-posilannya-na-ukrayinskih-forumah-50-60-sht/1665760.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-20T12:06:59+00:00",
+      "summary": "Добрый день. Нужно вручную разместить 50–60 крауд-ссылок на новый сайт. Тематика: инверторы, аккумуляторы и монтаж резервного питания, регион Кропивницкий и Кировоградская область. Адрес сайта скину в приватные. Что важно: только украинские форумы, сайты в индексе Google, DR от 10 по Ahrefs. не более...",
+      "budget": 0,
+      "beginnerFriendly": false
     },
     {
       "id": "fl.ru-218d60836599f8",
@@ -364,16 +404,6 @@
       "publishedAt": "2026-11-12T04:52:04+00:00",
       "summary": "-верстка сайта удаленного сервера под 2 предыдущим разработкам на основе карточек товаров существующей базы каталога* -Adobe CRM -Ведение клиентской базы -Организации услуги...",
       "budget": 40000,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "fl.ru-a7ceccbec5eae1",
-      "title": "Разработка Telegram Mini App для обработки фото и видео с пресетами под ключ (для всех)",
-      "url": "https://www.fl.ru/projects/5528888/razrabotka-telegram-mini-app-dlya-obrabotki-foto-i-video-s-presetami-pod-klyuch.html",
-      "source": "FL.ru",
-      "publishedAt": "2026-11-11T13:15:42+00:00",
-      "summary": "Ищу опытного разработчика или команду для создания полноценного Telegram Mini App для обработки фотографий и видео с авторскими пресетами и платной подпиской. Цель - создать современный, визуально премиальный продукт для продвижения через соц.сеть. Важны качество обработки, удобство использования и стильный дизайн. 1. Обработка фотографий * 15 профессиональных авторских пресетов. * Предпросмотр обработки в реальном в",
-      "budget": 0,
       "beginnerFriendly": false
     }
   ]
