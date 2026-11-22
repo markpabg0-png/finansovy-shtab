@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-21T22:30:20.551755+00:00",
+  "updatedAt": "2026-11-22T01:27:06.621485+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-a2c511a81253f3",
+      "title": "Название объявления Запуск онлайн-курса под ключ: лендинг, оплата и автоматизация",
+      "url": "https://freelancehunt.com/project/nazva-ogoloshennya-zapusk-onlayn-kursu/1666002.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-21T23:00:51+00:00",
+      "summary": "Здравствуйте! Ищу специалиста, который поможет реализовать запуск учебного онлайн-курса в сфере психологии - сексологии под ключ. Что нужно: • Создать небольшой лендинг для презентации и продажи курса (тексты и необходимые материалы предоставлю) • Подключить онлайн-оплату через Portmone • Настроить...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
     {
       "id": "freelancehunt-cf7edb9156463c",
       "title": "Настроить контекстную рекламу и поисковую оптимизацию - 10000UAH",
@@ -175,26 +185,6 @@
       "summary": "Нужен одностраничный сайт для небольшой кофейни. Что должно быть на странице: • Меню • Часы работы • Карта с расположением кофейни • Бронирование столика через AI-чат: посетитель в чате выбирает дату, время и количество гостей, а чат подтверждает бронирование Требования: • Адаптивный дизайн,...",
       "budget": 20000,
       "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-254fb7b1eb27ec",
-      "title": "Доработка страниц каталога и категорий WooCommerce (WordPress, UX/UI, калькулятор)",
-      "url": "https://freelancehunt.com/project/doopratsyuvannya-storinok-katalogu-ta-kategoriy-woocommerce/1665786.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-20T14:30:01+00:00",
-      "summary": "Доработать страницы категорий товаров и страницу каталога \"Продукция\" по тому же принципу, что и карточку товара: на каждой странице есть путь через корзину и путь через заявку. Это косметические правки, а не переработка полностью страниц. Необходимо учитывать UX/UI-дизайн. Страницы категорий и каталога...",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-12984b1d8672da",
-      "title": "Нарисовать дизайн лендинга в Figma по шаблону",
-      "url": "https://freelancehunt.com/project/namalyuvati-dizayn-lendingu-figma-po/1665781.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-20T13:55:37+00:00",
-      "summary": "Необходимо нарисовать дизайн лендинга по шаблону, который я предоставлю в личных сообщениях. Шаблон имеет только желаемую структуру сайта, вам нужно нарисовать современный дизайн и предложить свою цветовую гамму.",
-      "budget": 0,
-      "beginnerFriendly": false
     },
     {
       "id": "fl.ru-218d60836599f8",
