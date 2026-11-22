@@ -1,13 +1,21 @@
 {
-  "updatedAt": "2026-11-22T13:13:58.997472+00:00",
+  "updatedAt": "2026-11-22T16:59:49.700855+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
-  "errors": [
-    "FL.ru: HTTP Error 403: Forbidden"
-  ],
+  "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-593a71ff680dd4",
+      "title": "Создать ролики в рилс по шаблону - 4000UAH",
+      "url": "https://freelancehunt.com/project/sozdat-roliki-rils-po-shablonu/1666042.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-22T14:37:54+00:00",
+      "summary": "Нужно создать 20 однотипных роликов под формат рилса 1. Прикрепляю референс готового ролика. 2. Прикрепляю сценарий ролика, выходит примерно 2 минуты. 3. После того как записываем первый удачный, его нужно шаблонизировать, от ролика к ролику меняется название сайта, доход, плюсы и минусы. Весь контент...",
+      "budget": 4000,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-a92650951f913c",
       "title": "Продвижение сайта - доставка цветов Киев",
@@ -15,6 +23,16 @@
       "source": "Freelancehunt",
       "publishedAt": "2026-11-22T10:34:25+00:00",
       "summary": "Здравствуйте! Нужны качественные услуги по оптимизации. Анализ и дальнейшее продвижение. Доставка цветов в Киеве. https://kvitochka.ua/uk",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-b57921e540f228",
+      "title": "Комплексное восстановление сайта, удаление вирусов и устранение технических ошибок",
+      "url": "https://www.fl.ru/projects/5530103/kompleksnoe-vosstanovlenie-sayta-udalenie-virusov-i-ustranenie-tehnicheskih-oshibok.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-22T08:51:16+00:00",
+      "summary": "Необходимо провести комплексную техническую проверку существующего сайта, устранить обнаруженные проблемы и привести его в стабильное рабочее состояние. Список необходимых...",
       "budget": 0,
       "beginnerFriendly": false
     },
@@ -156,6 +174,186 @@
       "publishedAt": "2026-11-21T06:39:16+00:00",
       "summary": "Необходимо разработать интернет-магазин мягкой мебели на OpenCart. Задача включает разработку дизайна, адаптивную верстку и интеграцию готового шаблона с OpenCart. В качестве ориентира берем сайт-пример - mybed pl. Нужно разработать собственный дизайн на его основе, учитывая общую стилистику, структуру...",
       "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-e105a849206509",
+      "title": "создать сайт / smm панель",
+      "url": "https://www.fl.ru/projects/5529994/sozdat-sayt---smm-panel.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-21T06:05:56+00:00",
+      "summary": "Нужно создать сайт / смм панель. Работа как через апи, так и ручные заказы. Минимализм в дизайне. Структура главная страница с формой регистрации / форма входа, страница...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-218d60836599f8",
+      "title": "Нужен консольный торговый бот на Python (без графического интерфейса)",
+      "url": "https://www.fl.ru/projects/5529898/nujen-konsolnyiy-torgovyiy-bot-na-python-bez-graficheskogo-interfeysa-.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-20T06:10:37+00:00",
+      "summary": "Здравствуйте! Краткое описание. Нужен консольный торговый бот на Python (без графического интерфейса). Суть задачи: • Бот опрашивает бесплатный внешний API по заданному...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-ca3263b654c783",
+      "title": "Нужно написать бота, который будет автоматически бронить смены (Бюджет: 3 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529882/nujno-napisat-bota-kotoryiy-budet-avtomaticheski-bronit-smenyi.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-19T19:27:40+00:00",
+      "summary": "Нужно написать бота, который будет автоматически бронить смены, которые будут иметь определенный статус. Так же нужен телеграмм бот, который будет иметь интерфейс для...",
+      "budget": 3000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-dc0c5cc297561f",
+      "title": "Логист-Бот WBLogistics",
+      "url": "https://www.fl.ru/projects/5529812/logist-bot-wblogistics.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-19T07:52:00+00:00",
+      "summary": "Ознакомится можно в прикрепленном файле",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-8a6affd0c9b371",
+      "title": "Создание сайта и приложения для кафе",
+      "url": "https://www.fl.ru/projects/5529709/sozdanie-sayta-i-prilojeniya-dlya-kafe.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-18T09:55:40+00:00",
+      "summary": "Добрый день. Нужно сделать сайт для кафе Сейчас есть уже сайт, но у нас нет ни доставки ни программы лояльности. Нужна программа лояльности для удержания клиентов, дизайн и...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5f7a3dfc4bea10",
+      "title": "3D просмотр на сайте",
+      "url": "https://www.fl.ru/projects/5529621/3d-prosmotr-na-sayte.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T15:52:25+00:00",
+      "summary": "сделать html страницу для просмотра модели в браузере. Есть готовая 3д модель, нужно сделать возможность просматривать её в браузере и добавить кнопки для управления анимацией...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "fl.ru-3fdcfca0dfbbd3",
+      "title": "восстановить резервную копию сайта на бегет",
+      "url": "https://www.fl.ru/projects/5529593/vosstanovit-rezervnuyu-kopiyu-sayta-na-beget.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T12:52:29+00:00",
+      "summary": "Необходимо восстановить резервную копию сайта на бегет. База данных занимает более 10 гб, свободного дискового пространства меньше, добавить нет технической возможности....",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-682249847b315f",
+      "title": "Настроить для моего сайта S3 хранилище (Бюджет: 400 ₽)",
+      "url": "https://www.fl.ru/projects/5529587/nastroit-dlya-moego-sayta-s3-hranilische.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T12:45:28+00:00",
+      "summary": "Здравствуйте! Мне нужно специалист который настроит S3 хранилище моих файлов и т д. У них есть документация, нужно чтобы каждый день делались копии моего сайта и файлы...",
+      "budget": 400,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-47b956ed415453",
+      "title": "Веб-платформа для аналитики трейд-маркетинга и подготовки обучающих материалов с ИИ-агентом (для всех)",
+      "url": "https://www.fl.ru/projects/5529553/veb-platforma-dlya-analitiki-treyd-marketinga-i-podgotovki-obuchayuschih-materialov-s-ii-agentom.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T10:17:48+00:00",
+      "summary": "Ищем команду или опытного разработчика, чтобы оценить проект и затем его реализовать. Заказчик — производитель бытовой техники. Сейчас его данные из федеральных сетей и от полевого агентства обрабатываются вручную в Excel. Что нужно сделать Ядро платформы: личный кабинет с ролями и правами по сетям и регионам, загрузка Excel-файлов с автоопределением типа, справочники с историей версий по датам, отчёты с фильтрами и ",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "fl.ru-5eded226f7b28c",
+      "title": "Веб-игра «Глубина»: рогалик с прокачкой, предметами и Telegram-ботом (Бюджет: 45 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529509/veb-igra-glubina-rogalik-s-prokachkoy-predmetami-i-telegram-botom.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T05:02:50+00:00",
+      "summary": "Разработать браузерную игру-рогалик на JavaScript с пошаговым заходом в подземелье. Что нужно: - карта подземелья на canvas, пошаговое перемещение и расстановка монстров; -...",
+      "budget": 45000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-6c6a7a6c77aeaa",
+      "title": "Telegram-бот для разбора матчей CS2: статистика, ошибки и советы (Бюджет: 40 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529510/telegram-bot-dlya-razbora-matchey-cs2-statistika-oshibki-i-sovetyi.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T05:02:17+00:00",
+      "summary": "Нужен Telegram-бот, который по итогам матча CS2 показывает статистику игрока и даёт разбор. Что нужно: — приём данных о матче в реальном времени через Game State Integration...",
+      "budget": 40000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5111364a360bea",
+      "title": "Telegram-бот для интернет-магазина: каталог, заказы, оплата и админка (Бюджет: 60 000 ₽)",
+      "url": "https://www.fl.ru/projects/5529508/telegram-bot-dlya-internet-magazina-katalog-zakazyi-oplata-i-adminka.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T04:54:21+00:00",
+      "summary": "Нужен Telegram-бот для интернет-магазина компьютерной техники. Что нужно: — каталог товаров: фото, цены, категории, поиск; — корзина и оформление заказа; — приём оплаты...",
+      "budget": 60000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5c44756e23f01f",
+      "title": "Разработка механизма автоматического сопоставления идентичных товаров по похожим наименованиям",
+      "url": "https://www.fl.ru/projects/5529397/razrabotka-mehanizma-avtomaticheskogo-sopostavleniya-identichnyih-tovarov-po-pohojim-naimenovaniyam.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T09:42:55+00:00",
+      "summary": "Например, есть товар в базе с названием: Туалетная бумага Kleenex PremiumCare 4-слойная 4 рулона Швейцария А вот названия аналогичного товара на других сайтах: сайт А:...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-9d2fd08639af86",
+      "title": "Сбор открытых данных и контактов юрлиц РФ из реестров и сайтов компаний",
+      "url": "https://www.fl.ru/projects/5529392/sbor-otkryityih-dannyih-i-kontaktov-yurlits-rf-iz-reestrov-i-saytov-kompaniy.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T09:28:42+00:00",
+      "summary": "Нужно собрать актуальную таблицу действующих компаний РФ в 3 сегментах (промышленность, медицина, право) для поиска B2B-партнеров. • Выборка юрлиц из открытых источников...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-76fb3e7994c0c2",
+      "title": "Готовая система Steam Gift Bot: свои аккаунты, кошельки и API (для всех)",
+      "url": "https://www.fl.ru/projects/5529382/gotovaya-sistema-steam-gift-bot-svoi-akkauntyi-koshelki-i-api.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T08:52:23+00:00",
+      "summary": "Здравствуйте! Ищу готовую систему для автоматической покупки и отправки игр в Steam в виде подарков. В первую очередь интересует уже работающая система. Также рассмотрю доработку вашего существующего решения, если основные функции можно продемонстрировать до начала работ. Рассматриваю разработчиков из России или Украины. **Главное условие** Система должна работать с моими Steam-аккаунтами и покупать игры непосредстве",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-7342d48d7f5a43",
+      "title": "ТЗ: Прототип ИИ-бота для оценки латте-арта (Вливание «Капучино Сердце»)",
+      "url": "https://www.fl.ru/projects/5529375/tz-prototip-ii-bota-dlya-otsenki-latte-arta-vlivanie-kapuchino-serdtse.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-16T08:27:08+00:00",
+      "summary": "Разработать прототип системы компьютерного зрения (CV) и мультимодальной нейросети (VLM) для автоматической оценки видео с латте-артом. Бот должен выдавать объективную оценку...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-f2ccddc2bf55a0",
+      "title": "нужен программист сайта DLE",
+      "url": "https://www.fl.ru/projects/5529281/nujen-programmist-sayta-dle.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-15T06:31:20+00:00",
+      "summary": "настройка решение проблем с сайтом и т.д.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-076e3a6c919c10",
+      "title": "Веб-приложение (Бюджет: 20 000 ₽)",
+      "url": "https://www.fl.ru/projects/5528922/veb-prilojenie.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-12T04:55:48+00:00",
+      "summary": "СОЗДАТЬ С НУЛЯ !!! пример который я хочу скину вам лично. кратко сначало ознакомительная страница после регистрации вход основную чать, там создание сметы, КС2, КС3, сохранение...",
+      "budget": 20000,
       "beginnerFriendly": false
     }
   ]
