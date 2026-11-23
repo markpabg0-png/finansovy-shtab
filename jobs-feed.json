@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-23T01:32:22.438274+00:00",
+  "updatedAt": "2026-11-23T05:33:25.620108+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "fl.ru-ecc0501afe370f",
+      "title": "Доделать AI ботов в телеграме. (Бюджет: 3 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530160/dodelat-ai-botov-v-telegrame.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-23T04:53:35+00:00",
+      "summary": "1. Доделать бота по публикации постов в тг каналы Сам бот привязан к ИИ и делает в автоматическом режиме посты для автомобилистов Бот публикует контент в телеграм чатах...",
+      "budget": 3000,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-b51570f20655e3",
       "title": "Подготовка 2 статей на сайт",
