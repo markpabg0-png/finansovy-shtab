@@ -1,11 +1,51 @@
 {
-  "updatedAt": "2026-11-23T05:33:25.620108+00:00",
+  "updatedAt": "2026-11-23T09:40:41.194024+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-256aa17a8d4f6f",
+      "title": "Подготовить описания для сайта",
+      "url": "https://freelancehunt.com/project/pidgotuvati-opisi-dlya-sayti/1666140.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T09:04:08+00:00",
+      "summary": "Добрый день, Необходимо подготовить описания для сайта https://www.bpsknives.com/ по ТЗ SEO 5 описаний BPS Продавцы - 900–1200 слов (без блока FAQ) Мерч - 650–900 слов (без блока FAQ) Топоры - 1600–2000 слов (без блока FAQ) Складные - 1800–2300 слов (без блока FAQ) Кемпинг - 1900–2400 слов (без блока...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-df1de251848ec5",
+      "title": "Консультация по Cloudflare для сети сайтов",
+      "url": "https://freelancehunt.com/project/konsultatsiya-cloudflare-dlya-merezhi-saytiv/1666116.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T08:06:27+00:00",
+      "summary": "Что нужно: Ищем специалиста с практическим опытом работы с Cloudflare для консультации. Нужно разобрать текущее настройка, ответить на вопросы и дать конкретные рекомендации. Темы консультации: • Настройка DNS, SSL/TLS и проксирования для большого количества доменов • Защита от ботов, парсеров...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-8eaf6a7ad40860",
+      "title": "Вигрузка сайту на сервер /HTML - CSS",
+      "url": "https://freelancehunt.com/project/vigruzka-saytu-na-server-html/1666115.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T07:49:15+00:00",
+      "summary": "Загрузить сайт на сервер, подключить SSL сертификат через облако Настроить редиректы с www и ///(любое количество слешей) Проверить, чтобы не было верхнего регистра в url Проверить скорость сайта, если скорость ниже 90+ по pagespeed, оптимизировать скорость Очистить папку с сайтом от мусора (оставить...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-e9edb0c0f97aba",
+      "title": "Гугл Мерчант и реклама - 2000UAH",
+      "url": "https://freelancehunt.com/project/google-merchant-and-ads/1666114.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T07:46:31+00:00",
+      "summary": "Нужен специалист по Shopify, Google Merchant Center и Google Ads (рынок США) Описание проекта Самостоятельно создал интернет-магазин на платформе Shopify для собственного бренда VeluraDream. Основной продукт — премиальная ортопедическая подушка из Memory Foam, разработанная для комфортного сна и уменьшения...",
+      "budget": 2000,
+      "beginnerFriendly": false
+    },
     {
       "id": "fl.ru-ecc0501afe370f",
       "title": "Доделать AI ботов в телеграме. (Бюджет: 3 000 ₽)",
@@ -113,26 +153,6 @@
       "source": "Freelancehunt",
       "publishedAt": "2026-11-21T15:27:52+00:00",
       "summary": "Здравствуйте, нужно сделать промокарты для витаминов на сайт 1 товар - 8 карточек В дальнейшем возможна сотрудничество по аналогичным проектам на 70 товаров Техническое задание прилагаю Сайт конкурентов, где хорошо реализованы данные карточки и тот уровень карточек, который нам нужен, вот: https://perlahelsa.ua/triple-magnesium Первый...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-c76ebd9b8c0f69",
-      "title": "Простой телеграм бот по продаже под систем картриджей и жидкостей",
-      "url": "https://freelancehunt.com/project/prostiy-telegram-bot-po-prodazhi/1665939.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T13:10:44+00:00",
-      "summary": "Необходимо создать телеграм-бота с продажами под систему картриджей, ароматизаторов с простым интерфейсом и функционалом",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-9730b1368f68f1",
-      "title": "Интернет-магазин",
-      "url": "https://freelancehunt.com/project/internet-magazin/1665937.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T13:07:24+00:00",
-      "summary": "Интересует разработка интернет-магазина, сайта, желательно на OpenCart. Интересуют сроки и стоимость. Для примера, какой именно хочу - вот этот сайт по ссылке:https://ecomama.com.ua/ Жду предложений.",
       "budget": 0,
       "beginnerFriendly": false
     },
