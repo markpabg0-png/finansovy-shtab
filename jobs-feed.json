@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T09:40:41.194024+00:00",
+  "updatedAt": "2026-11-23T13:38:55.574883+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -7,14 +7,44 @@
   "errors": [],
   "jobs": [
     {
-      "id": "freelancehunt-256aa17a8d4f6f",
-      "title": "Подготовить описания для сайта",
-      "url": "https://freelancehunt.com/project/pidgotuvati-opisi-dlya-sayti/1666140.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "id": "freelancehunt-2f0b995b503ef2",
+      "title": "Дизайн сайта для б2б компании",
+      "url": "https://freelancehunt.com/project/dizayn-saytu-dlya-b2b-kompaniyi/1666183.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
       "source": "Freelancehunt",
-      "publishedAt": "2026-11-23T09:04:08+00:00",
-      "summary": "Добрый день, Необходимо подготовить описания для сайта https://www.bpsknives.com/ по ТЗ SEO 5 описаний BPS Продавцы - 900–1200 слов (без блока FAQ) Мерч - 650–900 слов (без блока FAQ) Топоры - 1600–2000 слов (без блока FAQ) Складные - 1800–2300 слов (без блока FAQ) Кемпинг - 1900–2400 слов (без блока...",
+      "publishedAt": "2026-11-23T11:58:06+00:00",
+      "summary": "Здравствуйте! Ищу UI/UX дизайнера для разработки дизайна одностраничного корпоративного сайта (one-page corporate website) для компании в нише B2B оптовой телекоммуникации (рынок США). Основная цель — создать современный, презентабельный сайт, который будет формировать доверие к компании среди потенциальных...",
       "budget": 0,
       "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-6f18651fe42eeb",
+      "title": "Редизайн сайта на WordPress - 8000UAH",
+      "url": "https://freelancehunt.com/project/redizayn-sayta-na-wordpress/1666176.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T11:42:38+00:00",
+      "summary": "Задача обновить дизайн сайта ukr3dprint.com Главный концепт: разделить на две ключевые услуги как по наполнению так и по визуальной составляющей: 1) серийный 3д печать (гражданский) 2) серийный 3д печать (милитари)",
+      "budget": 8000,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-886ef101733e74",
+      "title": "Протестировать и предоставить рекомендации по сайту интернет-магазина саженцев. - 5000UAH",
+      "url": "https://freelancehunt.com/project/protestuvati-ta-nadati-rekomendatsiyi-po-saytu/1666163.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T10:58:47+00:00",
+      "summary": "Я хочу улучшить свой интернет-магазин heuchera.com.ua, но в рамках существующего шаблона и OpenCart 3.0. Изменить шрифт, цвета, возможно структуру и размещение, возможно какой-то функционал. Главная цель - увеличить посещаемость, повторную посещаемость, узнаваемость, средний чек и продажи в целом. При...",
+      "budget": 5000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-67ace1f85221a5",
+      "title": "Flat Illustration для нового сайта",
+      "url": "https://freelancehunt.com/project/flat-illustration-dlya-novogo-sayta/1666152.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T09:45:21+00:00",
+      "summary": "Нужно разработать плоские векторные иллюстрации (Flat Illustration) для нового сайта. Стиль: Все иллюстрации должны соответствовать стилю логотипа и дизайну сайта. Использовать фирменные цвета: фиолетовый, сиреневый, оранжевый и белый. Стиль простой, современный и минималистичный. Что нужно нарисовать:...",
+      "budget": 0,
+      "beginnerFriendly": true
     },
     {
       "id": "freelancehunt-df1de251848ec5",
@@ -77,82 +107,12 @@
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-a92650951f913c",
-      "title": "Продвижение сайта - доставка цветов Киев",
-      "url": "https://freelancehunt.com/project/prosuvannya-saytu-dostavka-kvitiv-kiyiv/1666024.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-22T10:34:25+00:00",
-      "summary": "Здравствуйте! Нужны качественные услуги по оптимизации. Анализ и дальнейшее продвижение. Доставка цветов в Киеве. https://kvitochka.ua/uk",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
       "id": "fl.ru-b57921e540f228",
       "title": "Комплексное восстановление сайта, удаление вирусов и устранение технических ошибок",
       "url": "https://www.fl.ru/projects/5530103/kompleksnoe-vosstanovlenie-sayta-udalenie-virusov-i-ustranenie-tehnicheskih-oshibok.html",
       "source": "FL.ru",
       "publishedAt": "2026-11-22T08:51:16+00:00",
       "summary": "Необходимо провести комплексную техническую проверку существующего сайта, устранить обнаруженные проблемы и привести его в стабильное рабочее состояние. Список необходимых...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-a2c511a81253f3",
-      "title": "Название объявления Запуск онлайн-курса под ключ: лендинг, оплата и автоматизация",
-      "url": "https://freelancehunt.com/project/nazva-ogoloshennya-zapusk-onlayn-kursu/1666002.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T23:00:51+00:00",
-      "summary": "Здравствуйте! Ищу специалиста, который поможет реализовать запуск учебного онлайн-курса в сфере психологии - сексологии под ключ. Что нужно: • Создать небольшой лендинг для презентации и продажи курса (тексты и необходимые материалы предоставлю) • Подключить онлайн-оплату через Portmone • Настроить...",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-cf7edb9156463c",
-      "title": "Настроить контекстную рекламу и поисковую оптимизацию - 10000UAH",
-      "url": "https://freelancehunt.com/project/nalashtuvati-kontekstnu-reklamu-ta-poshukovu-optimizatsiyu/1665976.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T18:22:22+00:00",
-      "summary": "Интернет-магазин настольных игр (Одесса / Украина). Имеющийся аккаунт Google Ads с критическими ошибками. Цель - получать качественные лиды и продажи по адекватной стоимости. 1. Техническая часть - Настроить отслеживание конверсий с передачей стоимости транзакций в Google Ads через GA4 (сайт использует...",
-      "budget": 10000,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-d3140a4435fc88",
-      "title": "Перенос или создание сайта для художницы и мастерицы керамики - 15000UAH",
-      "url": "https://freelancehunt.com/project/perenesennya-abo-stvorennya-saytu-dlya-hudozhnitsi/1665973.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T18:06:00+00:00",
-      "summary": "Добрый день!У нас есть собственный домен ketmade.com с имеющимся хостингом, доступ к которому есть, но он находится у другого разработчика. Также у нас есть отдельная страница на платформе другого разработчика, которая обновлялась и содержит актуальную информацию:https://share.google/1Rr1DsM4iFYpxi0W8Ищем...",
-      "budget": 15000,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-5b10eb8abe4af1",
-      "title": "Реклама недорогих товаров",
-      "url": "https://freelancehunt.com/project/reklama-nedorogih-tovariv/1665972.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T17:43:55+00:00",
-      "summary": "Специалист Google Ads для рекламы недорогих товаров Prom.ua Ищу специалиста по Google Ads для запуска и ведения отдельной рекламной кампании интернет-магазина на Prom.ua. О магазине: Интернет-магазин Berlintehniks. Необходимо рекламировать примерно 100-150 товаров. Есть действующие Google Ads и Merchant...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-edbc609f2f4bd7",
-      "title": "Разработка системы автоматического сбора и публикации мероприятий на WordPress",
-      "url": "https://freelancehunt.com/project/razrabotka-sistemyi-avtomaticheskogo-sbora-publikatsii/1665961.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T15:48:37+00:00",
-      "summary": "Разработка системы автоматического сбора и публикации мероприятий на WordPress Ищем разработчика для создания системы автоматического сбора региональных мероприятий, с последующей публикацией в календаре нашего сайта на WordPress. Задача: Разработать систему, которая будет автоматически: - Собирать...",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-579b5ce140671a",
-      "title": "Создание промокарток товара (1 товар - 8 карточек) согласно ТЗ для наполнения сайта",
-      "url": "https://freelancehunt.com/project/stvorennya-promokartok-tovaru-tovar/1665959.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-21T15:27:52+00:00",
-      "summary": "Здравствуйте, нужно сделать промокарты для витаминов на сайт 1 товар - 8 карточек В дальнейшем возможна сотрудничество по аналогичным проектам на 70 товаров Техническое задание прилагаю Сайт конкурентов, где хорошо реализованы данные карточки и тот уровень карточек, который нам нужен, вот: https://perlahelsa.ua/triple-magnesium Первый...",
       "budget": 0,
       "beginnerFriendly": false
     },
