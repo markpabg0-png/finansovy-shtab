@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-23T21:05:17.197956+00:00",
+  "updatedAt": "2026-11-24T01:30:19.016577+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-0cdacc1def1e6c",
+      "title": "Разработка сайта для предпродажи криптотокена с подключением кошелька",
+      "url": "https://freelancehunt.com/project/rozrobka-saytu-dlya-peredprodazhu-kriptotokena/1666288.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-23T22:12:06+00:00",
+      "summary": "Ищу разработчика или команду для создания сайта предпродажи криптотокена. Покупатель должен иметь возможность подключить криптокошелек на сайте, указать количество токенов, увидеть сумму к оплате и подтвердить покупку в своем кошельке. Что нужно реализовать Адаптивный сайт для компьютеров и телефонов...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "fl.ru-0202139f556d83",
       "title": "Настроить S3 хранилище (Бюджет: 6 000 ₽)",
@@ -34,26 +44,6 @@
       "publishedAt": "2026-11-23T11:58:06+00:00",
       "summary": "Здравствуйте! Ищу UI/UX дизайнера для разработки дизайна одностраничного корпоративного сайта (one-page corporate website) для компании в нише B2B оптовой телекоммуникации (рынок США). Основная цель — создать современный, презентабельный сайт, который будет формировать доверие к компании среди потенциальных...",
       "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-6f18651fe42eeb",
-      "title": "Редизайн сайта на WordPress - 8000UAH",
-      "url": "https://freelancehunt.com/project/redizayn-sayta-na-wordpress/1666176.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-23T11:42:38+00:00",
-      "summary": "Задача обновить дизайн сайта ukr3dprint.com Главный концепт: разделить на две ключевые услуги как по наполнению так и по визуальной составляющей: 1) серийный 3д печать (гражданский) 2) серийный 3д печать (милитари)",
-      "budget": 8000,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-886ef101733e74",
-      "title": "Протестировать и предоставить рекомендации по сайту интернет-магазина саженцев. - 5000UAH",
-      "url": "https://freelancehunt.com/project/protestuvati-ta-nadati-rekomendatsiyi-po-saytu/1666163.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-23T10:58:47+00:00",
-      "summary": "Я хочу улучшить свой интернет-магазин heuchera.com.ua, но в рамках существующего шаблона и OpenCart 3.0. Изменить шрифт, цвета, возможно структуру и размещение, возможно какой-то функционал. Главная цель - увеличить посещаемость, повторную посещаемость, узнаваемость, средний чек и продажи в целом. При...",
-      "budget": 5000,
       "beginnerFriendly": false
     },
     {
