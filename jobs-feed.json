@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T09:26:09.223995+00:00",
+  "updatedAt": "2026-11-24T13:33:43.802907+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -8,6 +8,116 @@
     "FL.ru: HTTP Error 403: Forbidden"
   ],
   "jobs": [
+    {
+      "id": "freelancehunt-ec441ee4cc1f6e",
+      "title": "Telegram-бот для репоста товаров",
+      "url": "https://freelancehunt.com/project/telegram-bot-dlya-reposta-tovarov/1666396.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T13:00:01+00:00",
+      "summary": "1. Цель Бот должен забирать новые посты из 5 закрытых Telegram-групп и публиковать их в мой канал в моём стиле, при этом: •Цена остаётся такой же, как в исходном посте • Скидка уменьшается на 10 процентных пунктов Формат публикации (мой стиль) Публиковать нужно чисто и аккуратно: •Все фото из исходного...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-8850d93f60697a",
+      "title": "Модернизация новостного городского сайта на иврите в портал, сайт на WordPress.",
+      "url": "https://freelancehunt.com/project/modernizatsiya-novostnogo-gorodskogo-sayta-na-ivrite/1666394.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T12:53:59+00:00",
+      "summary": "Всё техническое задание описано полностью в прикреплённом файле Всё техническое задание описано полностью в прикреплённом файле",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-97aa75e192f273",
+      "title": "Аудит рекламы Meta, креативов и Shopify-сайта: что работает, что нет (UK, e-commerce)",
+      "url": "https://freelancehunt.com/project/audit-reklamyi-meta-kreativov-shopify-sayta/1666385.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T12:17:34+00:00",
+      "summary": "Небольшой семейный бренд шерстяных домашних тапочек ручной работы gooseinshoes.co.uk. Продаем в Великобритании через Shopify, реклама Facebook, Instagram. Сезон короткий: дедлайн рождественских заказов 17 декабря. Реклама сейчас: кампания «Продажи», вся UK, широкая аудитория, 3 креатива, £15-20 в день....",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-a25bac2c5ac8aa",
+      "title": "Гостевые посты (Guest posting) / Аутрич - 999UAH",
+      "url": "https://freelancehunt.com/project/gostovi-posti-guest-posting-outreach/1666377.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T11:57:20+00:00",
+      "summary": "Ищу исполнителя для сбора базы украинских сайтов под аутрич. Нужны живые площадки с актуальным контентом и органической видимостью — без очевидного спама, ссылочных ферм и признаков накрутки метрик. Задача: найти сайты по согласованной тематике; проверить трафик, географию и общую динамику; вручную...",
+      "budget": 999,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-4a099181eae9dc",
+      "title": "Крауд, WEB 2.0 и профильные ссылки - 999UAH",
+      "url": "https://freelancehunt.com/project/kraud-web-2-0-profilni-posilannya/1666370.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T11:46:46+00:00",
+      "summary": "Мне нужны качественные (не спамные) - крауд, WEB 2.0 и профильные ссылки для проектов в Украине и за границей.",
+      "budget": 999,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-f42fc5ab1717a0",
+      "title": "Консультация по защите сайтов и инфраструктуры от DDoS-атак",
+      "url": "https://freelancehunt.com/project/konsultatsiya-iz-zahistu-saytiv-ta-infrastrukturi/1666363.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T11:19:00+00:00",
+      "summary": "Что нужно: Ищем специалиста с практическим опытом защиты от DDoS-атак для консультации. Хотим подробно разобраться, как работают атаки и как правильно защитить нашу инфраструктуру: сеть сайтов и серверы. Темы консультации: • Аудит нашей текущей инфраструктуры: где слабые места • Решения для защиты:...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-7d2b86eb6498ec",
+      "title": "Создать болванку на Wordpress",
+      "url": "https://freelancehunt.com/project/stvoriti-balvanku-na-wordpress/1666359.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T11:09:55+00:00",
+      "summary": "Необходимо сделать заготовку (болванку) Wordpress для дальнейшего натягивания дизайнов. Критерии - максимально удаленные скрипты, css и т.д., которые не используются, максимально легкая стартовая страница. Максимальная оптимизация SEO и GEO с установкой соответствующих плагинов (плагины могут быть платные,...",
+      "budget": 0,
+      "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-628acf9e226cb3",
+      "title": "Ручная отрисовка двух иллюстраций интерфейса по референсам",
+      "url": "https://freelancehunt.com/project/ruchne-vidmalovuvannya-dvoh-ilyustratsiy-interfeysu-za/1666349.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T10:29:54+00:00",
+      "summary": "Необходимо вручную нарисовать две иллюстрации для инструкции по использованию браузерного расширения. Готовые референсы предоставим исполнителю. Первая иллюстрация показывает, как найти и закрепить расширение на панели браузера. Вторая — как добавить элемент с сайта и активировать его в расширении. Необходимо...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-3539e27301f88b",
+      "title": "Настройка и ведение Google ads для нескольких сайтов",
+      "url": "https://freelancehunt.com/project/nalashtuvannya-vedennya-google-ads-dlya/1666343.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T10:12:29+00:00",
+      "summary": "Ищем специалистов для настройки с нуля и ведения Google ads для нескольких еком проектов. Гео - Польша, Румыния, Украина, Германия можем отдать как один так и несколько сайтов просим присылать сразу свои кейсы (интересует только еком)",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-d115eecaacc27c",
+      "title": "Настройка и ведение Facebook ads для нескольких сайтов",
+      "url": "https://freelancehunt.com/project/nalashtuvannya-vedennya-facebook-ads-dlya/1666339.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T10:06:06+00:00",
+      "summary": "Ищем специалистов для настройки с нуля и ведения Facebook ads для нескольких еком проектов. Гео - Польша, Румыния, Украина, Германия можем отдать как один, так и несколько сайтов просим присылать сразу свои кейсы (интересует только еком)",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-16746bafbb7d96",
+      "title": "Создание сайта E Commerce под ключ",
+      "url": "https://freelancehunt.com/project/stvorennya-saytu-commerce-pid-klyuch/1666335.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T09:39:41+00:00",
+      "summary": "Необходимо создать сайт под ключ, по примеру skay.ua Также под мобильную версию, приложения новой почты, разновидности оплаты",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-2a5b65de4ef6b0",
       "title": "Нарисовать дизайн лендинга в Figma",
@@ -45,16 +155,6 @@
       "source": "Freelancehunt",
       "publishedAt": "2026-11-23T22:12:06+00:00",
       "summary": "Ищу разработчика или команду для создания сайта предпродажи криптотокена. Покупатель должен иметь возможность подключить криптокошелек на сайте, указать количество токенов, увидеть сумму к оплате и подтвердить покупку в своем кошельке. Что нужно реализовать Адаптивный сайт для компьютеров и телефонов...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-475b20e04c1b48",
-      "title": "Ручное создание ссылок / outreach для AI SaaS (только контекстные ссылки, без PBN или профилей) - 100EUR",
-      "url": "https://freelancehunt.com/project/manual-link-building-outreach-for/1666238.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-23T17:09:35+00:00",
-      "summary": "Мы ищем специалиста по созданию ссылок для проведения ручного outreach для Chattee (chattee.ai), немецкого конструктора приложений на основе ИИ, соответствующего требованиям GDPR. Пользователи описывают приложение на простом языке, и Chattee создает полнофункциональное веб-приложение с экспортом исходного...",
       "budget": 0,
       "beginnerFriendly": false
     }
