@@ -1,11 +1,31 @@
 {
-  "updatedAt": "2026-11-24T17:16:39.021785+00:00",
+  "updatedAt": "2026-11-24T21:08:45.495204+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-0061ced28793ed",
+      "title": "Дизайнерство - 1000UAH",
+      "url": "https://freelancehunt.com/project/dizaynerstvo/1666476.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T20:08:55+00:00",
+      "summary": "— это творческая деятельность, которая сочетает искусство, фантазию и современные технологии. Главная цель дизайнера — создавать красивые, удобные и полезные вещи. Существуют различные виды дизайна: графический дизайн, дизайн одежды, дизайн интерьера, веб-дизайн и ландшафтный дизайн. Каждый из них имеет...",
+      "budget": 1000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-44dcec0f49d869",
+      "title": "Телеграм-бот для магазина подарочных боксов - 1000UAH",
+      "url": "https://freelancehunt.com/project/telegram-bot-dlya-magazinu-podarunkovih-boksiv/1666467.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T18:52:10+00:00",
+      "summary": "Необходимо разработать Telegram-бота для магазина подарочных боксов. Основная его цель - поддерживать связь с клиентами, информировать их о новинках и акциях. Что должен уметь бот: 1. Регистрация пользователей Когда пользователь впервые заходит в бот, он проходит простую регистрацию и указывает свою...",
+      "budget": 1000,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-1b4a5c8ec02ba5",
       "title": "Корпоративный сайт для консалтинговой компании на WordPress",
@@ -95,56 +115,6 @@
       "summary": "Необходимо сделать заготовку (болванку) Wordpress для дальнейшего натягивания дизайнов. Критерии - максимально удаленные скрипты, css и т.д., которые не используются, максимально легкая стартовая страница. Максимальная оптимизация SEO и GEO с установкой соответствующих плагинов (плагины могут быть платные,...",
       "budget": 0,
       "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-3539e27301f88b",
-      "title": "Настройка и ведение Google ads для нескольких сайтов",
-      "url": "https://freelancehunt.com/project/nalashtuvannya-vedennya-google-ads-dlya/1666343.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T10:12:29+00:00",
-      "summary": "Ищем специалистов для настройки с нуля и ведения Google ads для нескольких еком проектов. Гео - Польша, Румыния, Украина, Германия можем отдать как один так и несколько сайтов просим присылать сразу свои кейсы (интересует только еком)",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-d115eecaacc27c",
-      "title": "Настройка и ведение Facebook ads для нескольких сайтов",
-      "url": "https://freelancehunt.com/project/nalashtuvannya-vedennya-facebook-ads-dlya/1666339.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T10:06:06+00:00",
-      "summary": "Ищем специалистов для настройки с нуля и ведения Facebook ads для нескольких еком проектов. Гео - Польша, Румыния, Украина, Германия можем отдать как один, так и несколько сайтов просим присылать сразу свои кейсы (интересует только еком)",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-16746bafbb7d96",
-      "title": "Создание сайта E Commerce под ключ",
-      "url": "https://freelancehunt.com/project/stvorennya-saytu-commerce-pid-klyuch/1666335.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T09:39:41+00:00",
-      "summary": "Необходимо создать сайт под ключ, по примеру skay.ua Также под мобильную версию, приложения новой почты, разновидности оплаты",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-2a5b65de4ef6b0",
-      "title": "Нарисовать дизайн лендинга в Figma",
-      "url": "https://freelancehunt.com/project/namalyuvati-dizayn-lendingu-figma/1666324.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T08:48:42+00:00",
-      "summary": "Необходимо нарисовать готовый к верстке адаптивный дизайн сайта. В первую очередь интересует именно мобильная версия. Дизайн должен быть современным и удобным для клиентов, а главное - чтобы он приносил заявки. Дизайн должен быть нарисован без использования ИИ! В личных сообщениях предоставлю макет...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-feb65801cc6f81",
-      "title": "Разработка и установка главной страницы сайта по макету-изображению - 2000UAH",
-      "url": "https://freelancehunt.com/project/rozrobka-ta-vstanovlennya-golovnoyi-storinki-saytu/1666323.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T08:46:06+00:00",
-      "summary": "Необходимо разработать и установить главную страницу на мой сайт https://sklad24.com.ua/product/shtabeler-hidravlichnyi-niuli-cty-e1-5/ на основе готового макета, который предоставлен в виде изображения (картинки). Что нужно сделать: Воссоздать дизайн главной страницы максимально точно по предоставленному...",
-      "budget": 2000,
-      "beginnerFriendly": false
     },
     {
       "id": "fl.ru-0202139f556d83",
@@ -323,16 +293,6 @@
       "source": "FL.ru",
       "publishedAt": "2026-11-16T08:27:08+00:00",
       "summary": "Разработать прототип системы компьютерного зрения (CV) и мультимодальной нейросети (VLM) для автоматической оценки видео с латте-артом. Бот должен выдавать объективную оценку...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "fl.ru-f2ccddc2bf55a0",
-      "title": "нужен программист сайта DLE",
-      "url": "https://www.fl.ru/projects/5529281/nujen-programmist-sayta-dle.html",
-      "source": "FL.ru",
-      "publishedAt": "2026-11-15T06:31:20+00:00",
-      "summary": "настройка решение проблем с сайтом и т.д.",
       "budget": 0,
       "beginnerFriendly": false
     }
