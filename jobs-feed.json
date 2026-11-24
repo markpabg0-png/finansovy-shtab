@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T05:22:43.905717+00:00",
+  "updatedAt": "2026-11-24T09:26:09.223995+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -8,6 +8,36 @@
     "FL.ru: HTTP Error 403: Forbidden"
   ],
   "jobs": [
+    {
+      "id": "freelancehunt-2a5b65de4ef6b0",
+      "title": "Нарисовать дизайн лендинга в Figma",
+      "url": "https://freelancehunt.com/project/namalyuvati-dizayn-lendingu-figma/1666324.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T08:48:42+00:00",
+      "summary": "Необходимо нарисовать готовый к верстке адаптивный дизайн сайта. В первую очередь интересует именно мобильная версия. Дизайн должен быть современным и удобным для клиентов, а главное - чтобы он приносил заявки. Дизайн должен быть нарисован без использования ИИ! В личных сообщениях предоставлю макет...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-feb65801cc6f81",
+      "title": "Разработка и установка главной страницы сайта по макету-изображению - 2000UAH",
+      "url": "https://freelancehunt.com/project/rozrobka-ta-vstanovlennya-golovnoyi-storinki-saytu/1666323.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T08:46:06+00:00",
+      "summary": "Необходимо разработать и установить главную страницу на мой сайт https://sklad24.com.ua/product/shtabeler-hidravlichnyi-niuli-cty-e1-5/ на основе готового макета, который предоставлен в виде изображения (картинки). Что нужно сделать: Воссоздать дизайн главной страницы максимально точно по предоставленному...",
+      "budget": 2000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-94c421a8e00b11",
+      "title": "Сайт для медицинской клиники - 1000USD",
+      "url": "https://freelancehunt.com/project/website-for-medical-clinic/1666309.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T06:54:40+00:00",
+      "summary": "Название: Дизайн и создание веб-сайта для медицинской клиники США (психиатрия + семейная практика) Привет! Я владелец клиники Pure Wellness Clinic, клиники психиатрии и семейной практики в Уиллоубруке, штат Иллинойс (пригород Чикаго, США). Я ищу опытного веб-дизайнера/разработчика или небольшую команду...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-0cdacc1def1e6c",
       "title": "Разработка сайта для предпродажи криптотокена с подключением кошелька",
