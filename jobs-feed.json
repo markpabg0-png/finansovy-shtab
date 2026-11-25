@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T09:30:09.274775+00:00",
+  "updatedAt": "2026-11-25T13:40:06.201712+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -7,14 +7,34 @@
   "errors": [],
   "jobs": [
     {
-      "id": "freelancehunt-05d1070318a91c",
-      "title": "Cootz - 20000UAH",
-      "url": "https://freelancehunt.com/project/cootz/1666517.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "id": "freelancehunt-094f53f7c92307",
+      "title": "Разработка лендинга для продукта с интеграцией платежной системы - 500PLN",
+      "url": "https://freelancehunt.com/project/rozrobka-landing-page-dlya-produktu/1666567.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
       "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T07:48:01+00:00",
-      "summary": "Ищу WordPress-разработчика для создания сайта дизайнерского бренда COOTZ design. Необходимо разработать двуязычный (английский / украинский) имиджевый сайт-каталог для независимого украинского fashion-бренда. Стиль: Luxury Editorial × Avant-garde. Визуальная концепция: минимализм, большие fashion-фотографии,...",
-      "budget": 20000,
+      "publishedAt": "2026-11-25T12:48:52+00:00",
+      "summary": "Что нужно сделать: Разработать современный, премиальный и конверсионный лендинг для 1 продукта. Структура страницы: презентация продукта, его преимущества, информация, блоки продаж и CTA. Предусмотреть 3–4 дополнительных страницы/ссылки (например: О нас, Контакты, FAQ, Политика конфиденциальности,...",
+      "budget": 0,
       "beginnerFriendly": true
+    },
+    {
+      "id": "freelancehunt-ba7a1ebe382f38",
+      "title": "Разработка кастомного сайта с админ-панелью для игровой студии (дизайн + разработка)",
+      "url": "https://freelancehunt.com/project/rozrobka-kastomnogo-saytu-admin-panellyu-dlya/1666556.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T12:14:11+00:00",
+      "summary": "Sinspired Studio — аутсорсинговая студия арта, анимации и разработки для игр. Ищем исполнителя для разработки нового сайта студии вместо текущего sinspiredstudio.com. Нужен кастомный сайт с собственной админ-панелью, где мы сами редактируем контент. На сайте будет много видео, анимаций и изображений,...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-53827df55a183b",
+      "title": "Поиск специалиста по созданию рекламных креативов и запуску Facebook / Instagram Ads - 4000UAH",
+      "url": "https://freelancehunt.com/project/poshuk-spetsialista-zi-stvorennya-reklamnih-kreativiv/1666538.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T10:43:31+00:00",
+      "summary": "1. Описание проекта Ищем опытного специалиста по настройке и ведению таргетированной рекламы в Facebook и Instagram для интернет-магазина детских товаров. Основная задача – привлечение целевых покупателей и увеличение количества заказов через сайт интернет-магазина. Нам нужен специалист, который сможет...",
+      "budget": 4000,
+      "beginnerFriendly": false
     },
     {
       "id": "freelancehunt-e60ad1492c291c",
@@ -75,16 +95,6 @@
       "summary": "Всё техническое задание описано полностью в прикреплённом файле Всё техническое задание описано полностью в прикреплённом файле",
       "budget": 0,
       "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-a25bac2c5ac8aa",
-      "title": "Гостевые посты (Guest posting) / Аутрич - 999UAH",
-      "url": "https://freelancehunt.com/project/gostovi-posti-guest-posting-outreach/1666377.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T11:57:20+00:00",
-      "summary": "Ищу исполнителя для сбора базы украинских сайтов под аутрич. Нужны живые площадки с актуальным контентом и органической видимостью — без очевидного спама, ссылочных ферм и признаков накрутки метрик. Задача: найти сайты по согласованной тематике; проверить трафик, географию и общую динамику; вручную...",
-      "budget": 999,
-      "beginnerFriendly": false
     },
     {
       "id": "fl.ru-0202139f556d83",
