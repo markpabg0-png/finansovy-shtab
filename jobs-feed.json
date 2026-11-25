@@ -1,11 +1,41 @@
 {
-  "updatedAt": "2026-11-25T13:40:06.201712+00:00",
+  "updatedAt": "2026-11-25T17:16:30.913200+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-3f18ff597feb93",
+      "title": "Royalstone",
+      "url": "https://freelancehunt.com/project/royalstone/1666597.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T15:09:55+00:00",
+      "summary": "Задача: Перенести информацию о мемориальных комплексах на сайт (OpenCart) и в торговый каталог (MSSG для Facebook). Все изделия изготавливаются индивидуально. Требования к наполнению каждой карточки: Заголовок: Понятное название модели + материал и форма (например, «Памятник гранитный арочный \"Скорбь\"»). Описание:...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-df2ac9d007fd6a",
+      "title": "Автоматический импорт и синхронизация товаров поставщиков на сайте OpenCart - 5000UAH",
+      "url": "https://freelancehunt.com/project/avtomatichniy-import-ta-sinhronizatsiya-tovariv-postachalnikiv/1666590.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T14:37:47+00:00",
+      "summary": "Автоматический импорт и синхронизация товаров поставщиков с OpenCart Необходимо разработать модуль автоматического импорта и обновления товаров с сайтов поставщиков в интернет-магазин OpenCart. 1. Получение информации с сайта поставщика Автоматическая авторизация на сайте поставщика по логину и паролю....",
+      "budget": 5000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-7544a67eee91b6",
+      "title": "Создание интернет-магазина (БАДы)",
+      "url": "https://freelancehunt.com/project/stvorennya-internet-magazinu-badi/1666588.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T14:34:04+00:00",
+      "summary": "Здравствуйте всем! Задача создать интернет-магазин (БАДы) Сначала товар будет один, его нужно показать на главной. Далее будут другие товары этой продукции, как только они выйдут. Структура примерно как у всех. (Главная, Товары, О нас, Контакты, Блог, описание карточки товара внутри. Доставка и оплата...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-094f53f7c92307",
       "title": "Разработка лендинга для продукта с интеграцией платежной системы - 500PLN",
@@ -57,16 +87,6 @@
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-1b4a5c8ec02ba5",
-      "title": "Корпоративный сайт для консалтинговой компании на WordPress",
-      "url": "https://freelancehunt.com/project/korporativniy-sayt-dlya-konsaltingovoyi-kompaniyi-na/1666435.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T15:45:34+00:00",
-      "summary": "Здравствуйте. Нам нужно разработать \"под ключ\" корпоративный сайт на WordPress с помощью LLM. Я проектный менеджер в маркетинговом агентстве и в настоящее время мы ищем специалиста, который сможет быстро и качественно с помощью ИИ (Claude Code, ChatGPT Codex) по конкурентной цене разработать корпоративный...",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
       "id": "fl.ru-d03cd4842dca9b",
       "title": "Размещение сайта на облачном сервере",
       "url": "https://www.fl.ru/projects/5530373/razmeschenie-sayta-na-oblachnom-servere.html",
@@ -75,26 +95,6 @@
       "summary": "Написал в ИИ-конструкторе криптобиржевой сканер(скрипт есть),но не знаю как его разместить. У beget вроде как проблемы в связи с последними взломами. Сам пробовал в Timeweb...",
       "budget": 0,
       "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-ec441ee4cc1f6e",
-      "title": "Telegram-бот для репоста товаров",
-      "url": "https://freelancehunt.com/project/telegram-bot-dlya-reposta-tovarov/1666396.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T13:00:01+00:00",
-      "summary": "1. Цель Бот должен забирать новые посты из 5 закрытых Telegram-групп и публиковать их в мой канал в моём стиле, при этом: •Цена остаётся такой же, как в исходном посте • Скидка уменьшается на 10 процентных пунктов Формат публикации (мой стиль) Публиковать нужно чисто и аккуратно: •Все фото из исходного...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-8850d93f60697a",
-      "title": "Модернизация новостного городского сайта на иврите в портал, сайт на WordPress.",
-      "url": "https://freelancehunt.com/project/modernizatsiya-novostnogo-gorodskogo-sayta-na-ivrite/1666394.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T12:53:59+00:00",
-      "summary": "Всё техническое задание описано полностью в прикреплённом файле Всё техническое задание описано полностью в прикреплённом файле",
-      "budget": 0,
-      "beginnerFriendly": true
     },
     {
       "id": "fl.ru-0202139f556d83",
