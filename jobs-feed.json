@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-25T17:16:30.913200+00:00",
+  "updatedAt": "2026-11-25T21:13:11.447821+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-3a38edf22f8247",
+      "title": "Доработать украинскую версию магазина на PrestaShop 1.6",
+      "url": "https://freelancehunt.com/project/dopratsyuvati-ukrayinsku-versiyu-magazinu-na-prestashop/1666617.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T17:24:14+00:00",
+      "summary": "Магазин уже частично на украинском, но местами остались русские надписи. Нужно завершить перевод клиентской части сайта, в частности корзины и оформления заказа, а также автоматических писем и уведомлений покупателям.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-3f18ff597feb93",
       "title": "Royalstone",
