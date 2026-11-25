@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-25T05:24:19.148211+00:00",
+  "updatedAt": "2026-11-25T09:30:09.274775+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-05d1070318a91c",
+      "title": "Cootz - 20000UAH",
+      "url": "https://freelancehunt.com/project/cootz/1666517.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-25T07:48:01+00:00",
+      "summary": "Ищу WordPress-разработчика для создания сайта дизайнерского бренда COOTZ design. Необходимо разработать двуязычный (английский / украинский) имиджевый сайт-каталог для независимого украинского fashion-бренда. Стиль: Luxury Editorial × Avant-garde. Визуальная концепция: минимализм, большие fashion-фотографии,...",
+      "budget": 20000,
+      "beginnerFriendly": true
+    },
     {
       "id": "freelancehunt-e60ad1492c291c",
       "title": "Доработка редизайна интернет-магазина в Figma",
@@ -14,16 +24,6 @@
       "publishedAt": "2026-11-24T21:31:36+00:00",
       "summary": "Ищу дизайнера для доработки редизайна интернет-магазина. Основная часть дизайна уже подготовлена с помощью Google Stitch. Макеты будут переданы исполнителю в Figma либо, при необходимости, можно предоставить доступ к проекту непосредственно в Google Stitch. Создавать дизайн с нуля, разрабатывать прототипы...",
       "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-0061ced28793ed",
-      "title": "Дизайнерство - 1000UAH",
-      "url": "https://freelancehunt.com/project/dizaynerstvo/1666476.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T20:08:55+00:00",
-      "summary": "— это творческая деятельность, которая сочетает искусство, фантазию и современные технологии. Главная цель дизайнера — создавать красивые, удобные и полезные вещи. Существуют различные виды дизайна: графический дизайн, дизайн одежды, дизайн интерьера, веб-дизайн и ландшафтный дизайн. Каждый из них имеет...",
-      "budget": 1000,
       "beginnerFriendly": false
     },
     {
