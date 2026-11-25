@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-24T21:08:45.495204+00:00",
+  "updatedAt": "2026-11-25T01:36:28.357712+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-e60ad1492c291c",
+      "title": "Доработка редизайна интернет-магазина в Figma",
+      "url": "https://freelancehunt.com/project/dorabotka-redizayna-internet-magazina-figma/1666484.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-24T21:31:36+00:00",
+      "summary": "Ищу дизайнера для доработки редизайна интернет-магазина. Основная часть дизайна уже подготовлена с помощью Google Stitch. Макеты будут переданы исполнителю в Figma либо, при необходимости, можно предоставить доступ к проекту непосредственно в Google Stitch. Создавать дизайн с нуля, разрабатывать прототипы...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-0061ced28793ed",
       "title": "Дизайнерство - 1000UAH",
@@ -67,16 +77,6 @@
       "beginnerFriendly": true
     },
     {
-      "id": "freelancehunt-97aa75e192f273",
-      "title": "Аудит рекламы Meta, креативов и Shopify-сайта: что работает, что нет (UK, e-commerce)",
-      "url": "https://freelancehunt.com/project/audit-reklamyi-meta-kreativov-shopify-sayta/1666385.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T12:17:34+00:00",
-      "summary": "Небольшой семейный бренд шерстяных домашних тапочек ручной работы gooseinshoes.co.uk. Продаем в Великобритании через Shopify, реклама Facebook, Instagram. Сезон короткий: дедлайн рождественских заказов 17 декабря. Реклама сейчас: кампания «Продажи», вся UK, широкая аудитория, 3 креатива, £15-20 в день....",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
       "id": "freelancehunt-a25bac2c5ac8aa",
       "title": "Гостевые посты (Guest posting) / Аутрич - 999UAH",
       "url": "https://freelancehunt.com/project/gostovi-posti-guest-posting-outreach/1666377.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
@@ -85,36 +85,6 @@
       "summary": "Ищу исполнителя для сбора базы украинских сайтов под аутрич. Нужны живые площадки с актуальным контентом и органической видимостью — без очевидного спама, ссылочных ферм и признаков накрутки метрик. Задача: найти сайты по согласованной тематике; проверить трафик, географию и общую динамику; вручную...",
       "budget": 999,
       "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-4a099181eae9dc",
-      "title": "Крауд, WEB 2.0 и профильные ссылки - 999UAH",
-      "url": "https://freelancehunt.com/project/kraud-web-2-0-profilni-posilannya/1666370.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T11:46:46+00:00",
-      "summary": "Мне нужны качественные (не спамные) - крауд, WEB 2.0 и профильные ссылки для проектов в Украине и за границей.",
-      "budget": 999,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-f42fc5ab1717a0",
-      "title": "Консультация по защите сайтов и инфраструктуры от DDoS-атак",
-      "url": "https://freelancehunt.com/project/konsultatsiya-iz-zahistu-saytiv-ta-infrastrukturi/1666363.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T11:19:00+00:00",
-      "summary": "Что нужно: Ищем специалиста с практическим опытом защиты от DDoS-атак для консультации. Хотим подробно разобраться, как работают атаки и как правильно защитить нашу инфраструктуру: сеть сайтов и серверы. Темы консультации: • Аудит нашей текущей инфраструктуры: где слабые места • Решения для защиты:...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-7d2b86eb6498ec",
-      "title": "Создать болванку на Wordpress",
-      "url": "https://freelancehunt.com/project/stvoriti-balvanku-na-wordpress/1666359.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-24T11:09:55+00:00",
-      "summary": "Необходимо сделать заготовку (болванку) Wordpress для дальнейшего натягивания дизайнов. Критерии - максимально удаленные скрипты, css и т.д., которые не используются, максимально легкая стартовая страница. Максимальная оптимизация SEO и GEO с установкой соответствующих плагинов (плагины могут быть платные,...",
-      "budget": 0,
-      "beginnerFriendly": true
     },
     {
       "id": "fl.ru-0202139f556d83",
