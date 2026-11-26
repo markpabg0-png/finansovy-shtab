@@ -1,11 +1,51 @@
 {
-  "updatedAt": "2026-11-26T13:39:05.806331+00:00",
+  "updatedAt": "2026-11-26T17:23:30.016179+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-e3143ce1ec3d8e",
+      "title": "Заказы и отзывы на Prom.ua",
+      "url": "https://freelancehunt.com/project/zamovlennya-ta-vidguki-na-prom-ua/1666805.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T16:18:27+00:00",
+      "summary": "Ищу исполнителя для привлечения покупателей в интернет-магазин на Prom.ua. Основная задача — увеличение количества успешных заказов и улучшение репутации магазина благодаря честным отзывам реальных покупателей. Интересует сотрудничество с оплатой за результат, а не за рекламу или переходы на сайт. Стоимость...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-35b35836e201b9",
+      "title": "Сайт (интернет-магазин) - 1000EUR",
+      "url": "https://freelancehunt.com/project/sayt-e-shop/1666802.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T15:59:27+00:00",
+      "summary": "Добрый день. Нужен человек, который работал или работает на чешском рынке, идеально чтобы находился в Чехии.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-839637efed220c",
+      "title": "Нужны рекомендации веб дизайнера",
+      "url": "https://freelancehunt.com/project/nuzhnyi-rekomendatsii-veb-dizaynera/1666796.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T15:33:05+00:00",
+      "summary": "Нужно взглянуть свежим взглядом на сайт и предложить какие-то улучшения https://testing.winwinseo.com/ Сочетание цветов, ховеры на кнопках и тп. Может какие-то современные тренды есть сейчас. Задача без реализации, просто по пунктам что можно улучшить.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-289fb7cbd9e800",
+      "title": "Фото для карточек товаров Shopify: главное фото сверху + lifestyle (инструменты для пиццы)",
+      "url": "https://freelancehunt.com/project/foto-dlya-kartok-tovariv-shopify-golovne/1666781.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T14:34:59+00:00",
+      "summary": "Мы KitchenStar — бренд инструментов для пиццы, продаем на Amazon и в собственном магазине на Shopify. Обновляем фото в каталоге сайта и ищем дизайнера, который сделает реалистичные фото товаров в едином стиле. Если первая партия выйдет удачной, дальше будет постоянная работа: остальная часть каталога,...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-fb827ba7e9f57d",
       "title": "Пересобрать код сайта",
@@ -57,16 +97,6 @@
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-cf4c566c09f8b2",
-      "title": "Оптимизация сайта на WP/Замена блоков",
-      "url": "https://freelancehunt.com/project/optimizatsiya-saytu-na-wp-zamina-blokiv/1666693.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T08:38:39+00:00",
-      "summary": "Необходимо оптимизировать скорость сайта на WP Показатель скорости должен находиться в зеленой зоне 90+ Не подключать различные плагины, а поработать с кодом и удалить все ненужное. Также нужно добавить sitemap, schema разметку. Удалить ненужные карты товаров и заменить старые на новые.",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
       "id": "fl.ru-1b95f9fe501bfb",
       "title": "Разработка сайта-конфигуратора",
       "url": "https://www.fl.ru/projects/5530599/razrabotka-sayta-konfiguratora.html",
@@ -84,56 +114,6 @@
       "publishedAt": "2026-11-25T17:24:14+00:00",
       "summary": "Магазин уже частично на украинском, но местами остались русские надписи. Нужно завершить перевод клиентской части сайта, в частности корзины и оформления заказа, а также автоматических писем и уведомлений покупателям.",
       "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-df2ac9d007fd6a",
-      "title": "Автоматический импорт и синхронизация товаров поставщиков на сайте OpenCart - 5000UAH",
-      "url": "https://freelancehunt.com/project/avtomatichniy-import-ta-sinhronizatsiya-tovariv-postachalnikiv/1666590.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T14:37:47+00:00",
-      "summary": "Автоматический импорт и синхронизация товаров поставщиков с OpenCart Необходимо разработать модуль автоматического импорта и обновления товаров с сайтов поставщиков в интернет-магазин OpenCart. 1. Получение информации с сайта поставщика Автоматическая авторизация на сайте поставщика по логину и паролю....",
-      "budget": 5000,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-7544a67eee91b6",
-      "title": "Создание интернет-магазина (БАДы)",
-      "url": "https://freelancehunt.com/project/stvorennya-internet-magazinu-badi/1666588.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T14:34:04+00:00",
-      "summary": "Здравствуйте всем! Задача создать интернет-магазин (БАДы) Сначала товар будет один, его нужно показать на главной. Далее будут другие товары этой продукции, как только они выйдут. Структура примерно как у всех. (Главная, Товары, О нас, Контакты, Блог, описание карточки товара внутри. Доставка и оплата...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-094f53f7c92307",
-      "title": "Разработка лендинга для продукта с интеграцией платежной системы - 500PLN",
-      "url": "https://freelancehunt.com/project/rozrobka-landing-page-dlya-produktu/1666567.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T12:48:52+00:00",
-      "summary": "Что нужно сделать: Разработать современный, премиальный и конверсионный лендинг для 1 продукта. Структура страницы: презентация продукта, его преимущества, информация, блоки продаж и CTA. Предусмотреть 3–4 дополнительных страницы/ссылки (например: О нас, Контакты, FAQ, Политика конфиденциальности,...",
-      "budget": 0,
-      "beginnerFriendly": true
-    },
-    {
-      "id": "freelancehunt-ba7a1ebe382f38",
-      "title": "Разработка кастомного сайта с админ-панелью для игровой студии (дизайн + разработка)",
-      "url": "https://freelancehunt.com/project/rozrobka-kastomnogo-saytu-admin-panellyu-dlya/1666556.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T12:14:11+00:00",
-      "summary": "Sinspired Studio — аутсорсинговая студия арта, анимации и разработки для игр. Ищем исполнителя для разработки нового сайта студии вместо текущего sinspiredstudio.com. Нужен кастомный сайт с собственной админ-панелью, где мы сами редактируем контент. На сайте будет много видео, анимаций и изображений,...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-53827df55a183b",
-      "title": "Поиск специалиста по созданию рекламных креативов и запуску Facebook / Instagram Ads - 4000UAH",
-      "url": "https://freelancehunt.com/project/poshuk-spetsialista-zi-stvorennya-reklamnih-kreativiv/1666538.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-25T10:43:31+00:00",
-      "summary": "1. Описание проекта Ищем опытного специалиста по настройке и ведению таргетированной рекламы в Facebook и Instagram для интернет-магазина детских товаров. Основная задача – привлечение целевых покупателей и увеличение количества заказов через сайт интернет-магазина. Нам нужен специалист, который сможет...",
-      "budget": 4000,
       "beginnerFriendly": false
     },
     {
