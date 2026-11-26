@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T05:26:07.952864+00:00",
+  "updatedAt": "2026-11-26T09:28:21.642004+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -8,6 +8,26 @@
     "FL.ru: HTTP Error 403: Forbidden"
   ],
   "jobs": [
+    {
+      "id": "freelancehunt-04c5ba01dce94f",
+      "title": "Ищем партнеров для онлайн-школы Skillity | До 2000 грн за клиента - 10000UAH",
+      "url": "https://freelancehunt.com/project/shukaemo-partneriv-dlya-onlayn-shkoli-skillity/1666703.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T09:22:12+00:00",
+      "summary": "Здравствуйте! Мы — Skillity, украинская онлайн-школа программирования для детей и подростков в возрасте от 10 до 18 лет. Наш сайт: https://skillity.com.ua/ Сейчас активно развиваем школу и ищем партнеров для долгосрочного сотрудничества. Кого ищем? Рассматриваем различные варианты сотрудничества:...",
+      "budget": 2000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-cf4c566c09f8b2",
+      "title": "Оптимизация сайта на WP/Замена блоков",
+      "url": "https://freelancehunt.com/project/optimizatsiya-saytu-na-wp-zamina-blokiv/1666693.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-26T08:38:39+00:00",
+      "summary": "Необходимо оптимизировать скорость сайта на WP Показатель скорости должен находиться в зеленой зоне 90+ Не подключать различные плагины, а поработать с кодом и удалить все ненужное. Также нужно добавить sitemap, schema разметку. Удалить ненужные карты товаров и заменить старые на новые.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-3a38edf22f8247",
       "title": "Доработать украинскую версию магазина на PrestaShop 1.6",
