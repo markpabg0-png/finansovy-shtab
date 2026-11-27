@@ -1,13 +1,81 @@
 {
-  "updatedAt": "2026-11-27T13:34:25.975580+00:00",
+  "updatedAt": "2026-11-27T17:23:25.238521+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
-  "errors": [
-    "FL.ru: HTTP Error 403: Forbidden"
-  ],
+  "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-530239a3d3f30c",
+      "title": "Медиа менеджер для комплексного ведения НПО - 15000UAH",
+      "url": "https://freelancehunt.com/project/media-menedzher-dlya-kompleksnogo-vedennya-go/1666987.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T16:23:02+00:00",
+      "summary": "Приветствие! Очень оперативно ищем человека, который: 1) соответствует нашим ценностям, видению и миссии (все есть на сайте, сайт новый в разработке, будет в 1000 раз лучше, чем есть) 2) будет вести наполнение нового сайта с периодичностью 1 пост в неделю + 1 статья на месяц на внешних медиа 3) развивать...",
+      "budget": 15000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-41f24e4a3d15ce",
+      "title": "Верстка интернет-магазина на Wix Studio по готовому дизайну (премиум-бренд шоколада, США)",
+      "url": "https://freelancehunt.com/project/verstka-internet-magazinu-na-wix-studio-za/1666986.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T16:12:19+00:00",
+      "summary": "Ищем опытного разработчика Wix Studio для сборки сайта премиального бренда шоколада, который выходит на рынок США. Дизайн делаем мы, от вас — верстка в Wix Studio по нашему макету в Figma.Что нужно сделать: Собрать сайт в Wix Studio по макету Настроить и стилизовать Wix Stores: страницы товаров, корзина,...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-3881814de6d397",
+      "title": "Внедрение микроразметки на сайт Wix",
+      "url": "https://freelancehunt.com/project/vprovadzhennya-mikrorozmitki-na-sayt-wix/1666978.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T15:19:35+00:00",
+      "summary": "Нужен специалист с опытом работы на платформе Wix для добавления микроразметки JSON-LD на сайт интернет-магазина. Краткое ТЗ: Добавить разметку хлебных крошек для страниц категорий и товаров. На страницу контактов добавить JSON-LD На главной странице обновить существующий объект LocalBusiness и связать...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-68200a7946af3b",
+      "title": "Крауд-ссылки (форумы, блоги) для аниме-портала",
+      "url": "https://www.fl.ru/projects/5530790/kraud-ssyilki-forumyi-blogi-dlya-anime-portala.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T15:00:03+00:00",
+      "summary": "Требуется размещение естественных крауд-ссылок в живых обсуждениях (комментарии на форумах, тематических порталах, Q&A-сервисах) для продвижения сайта по просмотру аниме...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-59497f3b601644",
+      "title": "Разработать Telegram Mini App — афиша мероприятий города (для всех)",
+      "url": "https://www.fl.ru/projects/5530786/razrabotat-telegram-mini-app--afisha-meropriyatiy-goroda.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T14:48:13+00:00",
+      "summary": "Ищу разработчика с опытом запуска Telegram Mini Apps для проекта. Это городская афиша Самарканда на русском и узбекском языках. Посетители смогут выбирать, куда пойти, а организаторы - самостоятельно размещать и обновлять мероприятия. Есть подробное ТЗ и визуальный пример интерфейса. Что нужно разработать - Мини-приложение для посетителей. Лента мероприятий, календарь, подборки «Сегодня», «Завтра» и «Выходные», поиск",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-2b5d0cd90a1e9e",
+      "title": "Автоматизация переписок в Direct (Instagram / Facebook)",
+      "url": "https://freelancehunt.com/project/avtomatiztsiya-perepisok-direct-instagram/1666964.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T14:42:11+00:00",
+      "summary": "Суть задания:Сейчас клиенты приходят с таргетированной рекламы в Direct, где менеджеры ведут их по готовому скрипту продаж. Нужно автоматизировать этот процесс с помощью ИИ-ассистента, чтобы бот вел диалог вместо менеджера, а живой сотрудник подключался только на ключевых этапах или в нестандартных ситуациях.Что...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "freelancehunt-2b5b493be11b20",
+      "title": "WebGL / Three.js разработчик (GLSL-шейдеры: толстое стекло + спиральный поток)",
+      "url": "https://freelancehunt.com/project/webgl-three-js-razrabotchik-glsl-sheyderyi-tolstoe/1666962.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T14:40:50+00:00",
+      "summary": "Описание задачи:Нужно сделать интерактивную 3D-сцену премиального уровня для сайта коллекционного стола в форме водоворота (монолитный оптический акрил).Что есть на старте:Наш 3D-дизайнер готовит оптимизированную статичную модель (.glb),разделенную на 3 части:статичная верхняя столешница,динамическая...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-1b2d6b330a7d37",
       "title": "Разработка рекламного лендинга для студии лазерной эпиляции",
@@ -29,6 +97,26 @@
       "beginnerFriendly": false
     },
     {
+      "id": "fl.ru-a0c07087e4105f",
+      "title": "Telegram Mini App (личный кабинет + подписки) (Бюджет: 2 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530719/telegram-mini-app-lichnyiy-kabinet--podpiski.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T06:08:05+00:00",
+      "summary": "Нужно разработать современный, быстрый Telegram Web Mini App (на React / Vue / HTML5) для сервиса. Серверная логика бота, таблицы ключей, автовыдача и приём платежей уже...",
+      "budget": 2000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-8d14cd0da7f02a",
+      "title": "Бот в телеграм",
+      "url": "https://www.fl.ru/projects/5530718/bot-v-telegram-.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T06:03:44+00:00",
+      "summary": "Бот в телеграм для автоматической слежки и возможности автоматического бронирования в портале ГИС ЭПД Резервирование.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
       "id": "freelancehunt-ccb055b1f2c309",
       "title": "Создание сайта",
       "url": "https://freelancehunt.com/project/stvorennya-saytu/1666851.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
@@ -37,6 +125,26 @@
       "summary": "создание многостраничного сайта с продвижением. Направление энергосберегающее освещение. Предоставляю ссылку на сайт с разработчиком. Интересует стоимость, сроки и что входит в стоимость",
       "budget": 0,
       "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-da034634ce9bfd",
+      "title": "Телеграм бот по Гаданиям с платежкой",
+      "url": "https://www.fl.ru/projects/5530696/telegram-bot-po-gadaniyam-s-platejkoy.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-26T20:06:53+00:00",
+      "summary": "Всем привет! Нужно создать бота по гаданиям таро на основе нейросети, прикрепить платежку юмани и добавить оплату за тг звезды, сделать возможность создавать рассылки. Сделать...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-686cddae0c5e8f",
+      "title": "Доработка сайта интернет-магазина на WebAsyst + Shop-Script (Бюджет: 10 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530698/dorabotka-sayta-internet-magazina-na-webasyst--shop-script.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-26T20:04:38+00:00",
+      "summary": "Условия заказа Привет! Нужно доработать лендинг, чтобы выросло количество заявок. Сейчас конверсия низкая: люди доходят до формы, но не отправляют. Что надо сделать:...",
+      "budget": 10000,
+      "beginnerFriendly": true
     },
     {
       "id": "freelancehunt-a1bc44fe5bb64f",
@@ -49,44 +157,104 @@
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-35b35836e201b9",
-      "title": "Сайт (интернет-магазин) - 1000EUR",
-      "url": "https://freelancehunt.com/project/sayt-e-shop/1666802.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T15:59:27+00:00",
-      "summary": "Добрый день. Нужен человек, который работал или работает на чешском рынке, идеально чтобы находился в Чехии.",
+      "id": "fl.ru-1b95f9fe501bfb",
+      "title": "Разработка сайта-конфигуратора",
+      "url": "https://www.fl.ru/projects/5530599/razrabotka-sayta-konfiguratora.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-26T03:57:01+00:00",
+      "summary": "Нужно написать движок для сайта-конфигуратора домашних кинотеатров. По сути представляет собой последовательное включение фильтров в общей базе систем. Но есть некоторые...",
       "budget": 0,
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-289fb7cbd9e800",
-      "title": "Фото для карточек товаров Shopify: главное фото сверху + lifestyle (инструменты для пиццы)",
-      "url": "https://freelancehunt.com/project/foto-dlya-kartok-tovariv-shopify-golovne/1666781.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T14:34:59+00:00",
-      "summary": "Мы KitchenStar — бренд инструментов для пиццы, продаем на Amazon и в собственном магазине на Shopify. Обновляем фото в каталоге сайта и ищем дизайнера, который сделает реалистичные фото товаров в едином стиле. Если первая партия выйдет удачной, дальше будет постоянная работа: остальная часть каталога,...",
+      "id": "fl.ru-d03cd4842dca9b",
+      "title": "Размещение сайта на облачном сервере",
+      "url": "https://www.fl.ru/projects/5530373/razmeschenie-sayta-na-oblachnom-servere.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-24T15:32:04+00:00",
+      "summary": "Написал в ИИ-конструкторе криптобиржевой сканер(скрипт есть),но не знаю как его разместить. У beget вроде как проблемы в связи с последними взломами. Сам пробовал в Timeweb...",
       "budget": 0,
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-fb827ba7e9f57d",
-      "title": "Пересобрать код сайта",
-      "url": "https://freelancehunt.com/project/peresobrat-kod-sayta/1666766.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T13:31:35+00:00",
-      "summary": "Уже Есть сайт сделанный на конструкторе Wix всего 8 страниц. Цель проекта — перенести действующий сайт с конструктора на независимый хостинг, сохранив его визуальный стиль, контент и привычную навигацию. После переноса заказчик должен владеть исходным кодом и иметь возможность самостоятельно создавать...",
+      "id": "fl.ru-0202139f556d83",
+      "title": "Настроить S3 хранилище (Бюджет: 6 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530283/nastroit-s3-hranilische.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-23T20:26:13+00:00",
+      "summary": "Здравствуйте )) Кто поможет мне натсроить резервную копию моего сайта, чтобы копии сохранились на predisk.com ? Документация сервиса есть.",
+      "budget": 6000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-ecc0501afe370f",
+      "title": "Доделать AI ботов в телеграме. (Бюджет: 3 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530160/dodelat-ai-botov-v-telegrame.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-23T04:53:35+00:00",
+      "summary": "1. Доделать бота по публикации постов в тг каналы Сам бот привязан к ИИ и делает в автоматическом режиме посты для автомобилистов Бот публикует контент в телеграм чатах...",
+      "budget": 3000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-b57921e540f228",
+      "title": "Комплексное восстановление сайта, удаление вирусов и устранение технических ошибок",
+      "url": "https://www.fl.ru/projects/5530103/kompleksnoe-vosstanovlenie-sayta-udalenie-virusov-i-ustranenie-tehnicheskih-oshibok.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-22T08:51:16+00:00",
+      "summary": "Необходимо провести комплексную техническую проверку существующего сайта, устранить обнаруженные проблемы и привести его в стабильное рабочее состояние. Список необходимых...",
       "budget": 0,
       "beginnerFriendly": false
     },
     {
-      "id": "freelancehunt-0b47d11fea498a",
-      "title": "UX/UI-аудит туристического сайта - 1000UAH",
-      "url": "https://freelancehunt.com/project/ux-ui-audit-turistichnogo-saytu/1666763.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T13:17:54+00:00",
-      "summary": "UX/UI-аудит туристического сайта и рекомендации по улучшению структуры и дизайна Ищем специалиста для комплексного анализа действующего туристического сайта. Цель: сделать сайт более современным, привлекательным, удобным для пользователей и подготовить его структуру к дальнейшему SEO-продвижению. Что...",
-      "budget": 1000,
+      "id": "fl.ru-e105a849206509",
+      "title": "создать сайт / smm панель",
+      "url": "https://www.fl.ru/projects/5529994/sozdat-sayt---smm-panel.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-21T06:05:56+00:00",
+      "summary": "Нужно создать сайт / смм панель. Работа как через апи, так и ручные заказы. Минимализм в дизайне. Структура главная страница с формой регистрации / форма входа, страница...",
+      "budget": 0,
       "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-218d60836599f8",
+      "title": "Нужен консольный торговый бот на Python (без графического интерфейса)",
+      "url": "https://www.fl.ru/projects/5529898/nujen-konsolnyiy-torgovyiy-bot-na-python-bez-graficheskogo-interfeysa-.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-20T06:10:37+00:00",
+      "summary": "Здравствуйте! Краткое описание. Нужен консольный торговый бот на Python (без графического интерфейса). Суть задачи: • Бот опрашивает бесплатный внешний API по заданному...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-dc0c5cc297561f",
+      "title": "Логист-Бот WBLogistics",
+      "url": "https://www.fl.ru/projects/5529812/logist-bot-wblogistics.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-19T07:52:00+00:00",
+      "summary": "Ознакомится можно в прикрепленном файле",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-8a6affd0c9b371",
+      "title": "Создание сайта и приложения для кафе",
+      "url": "https://www.fl.ru/projects/5529709/sozdanie-sayta-i-prilojeniya-dlya-kafe.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-18T09:55:40+00:00",
+      "summary": "Добрый день. Нужно сделать сайт для кафе Сейчас есть уже сайт, но у нас нет ни доставки ни программы лояльности. Нужна программа лояльности для удержания клиентов, дизайн и...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-5f7a3dfc4bea10",
+      "title": "3D просмотр на сайте",
+      "url": "https://www.fl.ru/projects/5529621/3d-prosmotr-na-sayte.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-17T15:52:25+00:00",
+      "summary": "сделать html страницу для просмотра модели в браузере. Есть готовая 3д модель, нужно сделать возможность просматривать её в браузере и добавить кнопки для управления анимацией...",
+      "budget": 0,
+      "beginnerFriendly": true
     }
   ]
 }
