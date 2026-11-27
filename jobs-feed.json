@@ -1,11 +1,31 @@
 {
-  "updatedAt": "2026-11-27T05:25:31.042838+00:00",
+  "updatedAt": "2026-11-27T09:27:49.182362+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "fl.ru-a0c07087e4105f",
+      "title": "Telegram Mini App (личный кабинет + подписки) (Бюджет: 2 000 ₽)",
+      "url": "https://www.fl.ru/projects/5530719/telegram-mini-app-lichnyiy-kabinet--podpiski.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T06:08:05+00:00",
+      "summary": "Нужно разработать современный, быстрый Telegram Web Mini App (на React / Vue / HTML5) для сервиса. Серверная логика бота, таблицы ключей, автовыдача и приём платежей уже...",
+      "budget": 2000,
+      "beginnerFriendly": false
+    },
+    {
+      "id": "fl.ru-8d14cd0da7f02a",
+      "title": "Бот в телеграм",
+      "url": "https://www.fl.ru/projects/5530718/bot-v-telegram-.html",
+      "source": "FL.ru",
+      "publishedAt": "2026-11-27T06:03:44+00:00",
+      "summary": "Бот в телеграм для автоматической слежки и возможности автоматического бронирования в портале ГИС ЭПД Резервирование.",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-ccb055b1f2c309",
       "title": "Создание сайта",
@@ -43,46 +63,6 @@
       "source": "Freelancehunt",
       "publishedAt": "2026-11-26T20:00:45+00:00",
       "summary": "Входные данные: Учебный центр с двумя филиалами и общей командой менеджеров. Имеется база около 10 000 контактов студентов в Excel (номера телефонов). В настоящее время системная работа с базой и рассылки отсутствуют. С нашей стороны планируется разработка Telegram Mini App для презентации курсов...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-8449f931c1d515",
-      "title": "Поиск клиентов для создания сайта под ключ - 750UAH",
-      "url": "https://freelancehunt.com/project/znahodzhennya-klientiv-dlya-stvorennya-saytu-pid/1666833.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T19:38:44+00:00",
-      "summary": "Необходимо находить клиентов для создания сайта под ключ, 250 грн за реального клиента, который оплатит заказ, цена неправильная",
-      "budget": 750,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-67ef232f51ddef",
-      "title": "Настройка и ведение гугл рекламы сайта/гугл точки/инстаграм/фейсбук",
-      "url": "https://freelancehunt.com/project/nalashtuvannya-ta-vedennya-gugl-reklami-saytu-gugl/1666825.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T18:04:36+00:00",
-      "summary": "Нужен профессионал своего дела, который может отвечать за результат, нужна качественная реклама по многим группам товара, за адекватный бюджет. Сайт для ознакомления http://kozaksteel.com.ua/ Рекламный кабинет есть, готов к работе",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-a9726684b464b9",
-      "title": "Копирайтер / Сценарист для YouTube-видео - 5450UAH",
-      "url": "https://freelancehunt.com/project/kopirayter-stsenarist-dlya-youtube-video/1666823.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T17:34:03+00:00",
-      "summary": "Ищем нескольких веб-дизайнеров для выполнения разового проекта по обновлению и наполнению сайта, с отличной перспективой перехода к долгосрочному сотрудничеству при успешных результатах. Задача подойдет как опытным специалистам, так и внимательным новичкам, которые уверенно ориентируются в веб-дизайне...",
-      "budget": 5450,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-e3143ce1ec3d8e",
-      "title": "Заказы и отзывы на Prom.ua",
-      "url": "https://freelancehunt.com/project/zamovlennya-ta-vidguki-na-prom-ua/1666805.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T16:18:27+00:00",
-      "summary": "Ищу исполнителя для привлечения покупателей в интернет-магазин на Prom.ua. Основная задача — увеличение количества успешных заказов и улучшение репутации магазина благодаря честным отзывам реальных покупателей. Интересует сотрудничество с оплатой за результат, а не за рекламу или переходы на сайт. Стоимость...",
       "budget": 0,
       "beginnerFriendly": false
     },
@@ -275,16 +255,6 @@
       "summary": "Здравствуйте! Мне нужно специалист который настроит S3 хранилище моих файлов и т д. У них есть документация, нужно чтобы каждый день делались копии моего сайта и файлы...",
       "budget": 400,
       "beginnerFriendly": false
-    },
-    {
-      "id": "fl.ru-47b956ed415453",
-      "title": "Веб-платформа для аналитики трейд-маркетинга и подготовки обучающих материалов с ИИ-агентом (для всех)",
-      "url": "https://www.fl.ru/projects/5529553/veb-platforma-dlya-analitiki-treyd-marketinga-i-podgotovki-obuchayuschih-materialov-s-ii-agentom.html",
-      "source": "FL.ru",
-      "publishedAt": "2026-11-17T10:17:48+00:00",
-      "summary": "Ищем команду или опытного разработчика, чтобы оценить проект и затем его реализовать. Заказчик — производитель бытовой техники. Сейчас его данные из федеральных сетей и от полевого агентства обрабатываются вручную в Excel. Что нужно сделать Ядро платформы: личный кабинет с ролями и правами по сетям и регионам, загрузка Excel-файлов с автоопределением типа, справочники с историей версий по датам, отчёты с фильтрами и ",
-      "budget": 0,
-      "beginnerFriendly": true
     }
   ]
 }
