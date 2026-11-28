@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T21:11:47.940648+00:00",
+  "updatedAt": "2026-11-28T01:33:47.599168+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
@@ -8,6 +8,16 @@
     "FL.ru: HTTP Error 403: Forbidden"
   ],
   "jobs": [
+    {
+      "id": "freelancehunt-ee16e0acf641e9",
+      "title": "Бот карманный вариант",
+      "url": "https://freelancehunt.com/project/bot-pocket-option/1667030.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-27T22:33:06+00:00",
+      "summary": "Проект: Телеграм-бот для торговых сигналов OTC Pocket Option Платформа: Телеграм Брокер: Pocket Option Язык: Английский (с возможностью добавления русского) 1. Обзор проекта Я ищу опытного разработчика для создания телеграм-бота, который анализирует валютные пары OTC Pocket Option и генерирует...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-37409327119ad1",
       "title": "Создание сайта",
@@ -85,16 +95,6 @@
       "source": "Freelancehunt",
       "publishedAt": "2026-11-27T12:03:18+00:00",
       "summary": "Мне нужен опытный специалист по SEO, чтобы исследовать и решить проблему резкого падения позиций в поисковой системе Google, затрагивающего мой сайт по мойке автомобилей, которое началось примерно в середине октября 2026 года. URL сайта будет предоставлен напрямую выбранному фрилансеру после выбора...",
-      "budget": 0,
-      "beginnerFriendly": false
-    },
-    {
-      "id": "freelancehunt-ccb055b1f2c309",
-      "title": "Создание сайта",
-      "url": "https://freelancehunt.com/project/stvorennya-saytu/1666851.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
-      "source": "Freelancehunt",
-      "publishedAt": "2026-11-26T22:02:02+00:00",
-      "summary": "создание многостраничного сайта с продвижением. Направление энергосберегающее освещение. Предоставляю ссылку на сайт с разработчиком. Интересует стоимость, сроки и что входит в стоимость",
       "budget": 0,
       "beginnerFriendly": false
     }
