@@ -1,11 +1,21 @@
 {
-  "updatedAt": "2026-11-28T09:06:37.071922+00:00",
+  "updatedAt": "2026-11-28T13:18:50.184468+00:00",
   "sources": [
     "FL.ru",
     "Freelancehunt"
   ],
   "errors": [],
   "jobs": [
+    {
+      "id": "freelancehunt-8c52bb2476e07a",
+      "title": "Создать универсальный сайт для товаров",
+      "url": "https://freelancehunt.com/project/stvoriti-universalniy-sayt-dlya-tovariki/1667060.html?utm_source=rss&utm_medium=feed&utm_campaign=new_projects",
+      "source": "Freelancehunt",
+      "publishedAt": "2026-11-28T10:06:30+00:00",
+      "summary": "Разработка универсального товарного сайта для тестирования и продажи товаров Описание задания Необходимо разработать универсальный сайт для продажи и тестирования различных товаров с помощью рекламы в Google Ads, Facebook, Instagram и TikTok. На данном этапе мы не привязаны к конкретной товарной нише,...",
+      "budget": 0,
+      "beginnerFriendly": false
+    },
     {
       "id": "freelancehunt-ee16e0acf641e9",
       "title": "Бот карманный вариант",
